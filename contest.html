@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+    <style>
+      @import url('https://fonts.cdnfonts.com/css/avenir');
+    </style>
+
+    <script>
+      tailwind.config = {
+        prefix: "tw-",
+        corePlugins: {
+          preflight: false,
+        },
+        theme: {
+          extend: {
+            colors: {
+              purple: "#352256",
+              lightPurple: "#503480",
+              secondLightPurple: "#32234B",
+              darkPurple: "#26173F",
+              white: "#FFFFFF",
+              yellow: "#FFDE01",
+              subtitleGray: "#BAACD2AD",
+              darkPink: "#C51DF1",
+              lightGreen: "#1DFF85",
+              lightPink: '#15324159',
+              darkViolet: '#9400D3',
+              indigo: '#4B0082',
+              darkMagenta: '#800080',
+
+              
+            },
+            fontFamily: {
+              "avenir": ['"Avenir"', 'sans-sefir']
+            }
+          },
+          
+        },
+      };
+    </script>
+    <title>Document</title>
+  </head>
+  <body class="tw-m-0 tw-p-0 tw-font-avenir tw-bg-purple">
+
+    <div class="tw-bg-purple tw-flex tw-flex-col tw-items-center tw-justify-center">
+      <div class="tw-text-white tw-justify-center tw-font-bold tw-text-[50px] tw-bg-purple tw-items-center tw-flex tw-justify-between tw-w-[400px]">
+        <div>Contest</div>
+        <img src="images/x.png" class="tw-w-[20px] tw-mr-[10px]"></img>
+      </div>
+
+      <div class="tw-w-[550px] tw-mt-[-30px] tw-h-[800px] tw-mr-[30px] tw-justify-center tw-items-center tw-relative">
+        <div style="background-image: url(images/daily-battle.svg);height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;">
+          <span class="tw-flex tw-absolute tw-justify-center tw-text-white tw-text-center tw-items-center tw-top-[100px] tw-left-[200px]  tw-items-center tw-font-bold  tw-text-[35px] "> Daily Battle <span class=" tw-ml-[5px] tw-font-bold tw-text-yellow tw-text-center tw-items-center tw-text-[35px]"> #19</span></span>
+          <div class="tw-flex tw-flex-col tw-gap-[10px] tw-absolute tw-top-[200px] tw-left-[110px]">
+            <div class="tw-text-[35px] tw-text-white tw-font-bold">Ends In:</div>
+
+            <div class="tw-flex tw-gap-[20px]">
+
+              <div class="tw-flex tw-flex-col tw-gap-[10px] tw-justify-center tw-text-center">
+                <div  
+                class="tw-bg-purple tw-rounded-md tw-justify-center tw-items-center tw-text-center tw-text-white tw-font-bold tw-text-[35px] tw-justify-center tw-flex tw-flex-col tw-w-[70px] tw-h-[65px] tw-border-2 tw-border-yellow " style="border-style: solid; border-width: 2px; border-color: #503480; border-radius: 8px;"
+                >
+                7
+              </div>
+              <div class="tw-text-white tw-text-base">
+                Hours
+              </div>
+            </div>
+            <div class="tw-flex tw-flex-col tw-gap-[10px] tw-justify-center tw-text-center">
+
+              <div
+              class="tw-bg-purple tw-rounded-md tw-justify-center tw-items-center tw-text-center tw-text-white tw-font-bold tw-text-[35px] tw-justify-center tw-flex tw-flex-col tw-w-[70px] tw-h-[65px] tw-border-8 tw-border-white" style="border-style: solid; border-width: 2px; border-color: #503480; border-radius: 8px;"
+              >
+              12
+            </div>
+            <div class="tw-text-white tw-text-base">
+              Minutes
+            </div>
+          </div>
+            <div class="tw-flex tw-flex-col tw-gap-[10px] tw-justify-center tw-text-center">
+
+              <div
+              class="tw-bg-purple tw-rounded-md tw-justify-center tw-items-center tw-text-center tw-text-white tw-font-bold tw-text-[35px] tw-justify-center tw-flex tw-flex-col tw-w-[70px] tw-h-[65px] tw-border-8 tw-border-white" style="border-style: solid; border-width: 2px; border-color: #503480; border-radius: 8px;"
+              >
+              51
+            </div>
+            <div class="tw-text-white tw-text-base">
+              Seconds
+            </div>
+          </div>
+          </div>
+
+
+            <div class="tw-flex tw-flex-col tw-gap-[20px] tw-bg-purple tw-opacity-90 tw-rounded-lg  ">
+              <div class="tw-flex tw-flex-col tw-w-[270px] tw-h-[170px]" style="border-style: solid; border-width: 2px; border-color: #503480; border-radius: 8px; ">
+                <div class="tw-text-[35px] tw-text-white tw-font-bold tw-justify-center tw-items-center tw-text-center tw-mt-[15px] tw-mb-[3px]" >
+                  Prize Pool
+                </div>
+                <div class="tw-text-[35px] tw-text-yellow tw-font-bold tw-justify-center tw-items-center tw-text-center tw-mb-[10px]">
+                  10. 000€
+                </div>
+                <div class="tw-w-[270px] tw-text-center tw-justify-center tw-items-center">
+                  <button
+                  class="btn btn-secondary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#loginModal"
+                >
+                  <div class="tw-w-[225px]">ENROL NOW - FREE</div>
+                </button>
+                </div>
+
+              </div>
+
+              
+            </div>
+            
+
+          </div>
+      </div>
+        </div>
+      </div>
+    </div>
+    <div class="tw-bg-purple tw-w-full tw-h-full tw-mt-[20px] ">
+      <div
+        class="tw-flex tw-flex-col tw-justify-center tw-items-center tw-rounded-lg tw-pb-[15px] tw-w-[450px] tw-m-auto tw-bg-darkPurple" style="border-radius: 29px; "
+      >
+        <div
+          class="tw-text-white  tw-justify-center tw-text-[35px] tw-font-bold tw-mt-[30px] tw-mb-[30px]"
+        >
+          Leaderboard
+        </div>
+
+        <div class="tw-flex tw-flex-col tw-w-full tw-gap-[10px] tw-justify-center tw-items-center">
+          <div
+            class="tw-flex tw-gap-[20px] tw-justify-between tw-p-[10px] tw-w-[380px] tw-bg-secondLightPurple tw-h-[60px] tw-rounded-md"
+          >
+            <div
+              class="tw-bg-indigo tw-rounded-md tw-justify-center tw-items-center tw-text-center tw-text-white tw-font-bold tw-text-[35px] tw-justify-center tw-flex tw-flex-col tw-w-[65px] tw-h-[60px]"
+            >
+              1
+            </div>
+            <div
+              class="tw-text-subtitleGray tw-text-left tw-justify-center tw-flex tw-flex-col tw-text-[16px] "
+            >
+              Nameisrael
+            </div>
+            <div
+              class="tw-flex tw-flex-col tw-items-left tw-text-left tw-w-[100px] tw-bg-lightPurple tw-rounded-md"
+            >
+              <div class="tw-p-2 tw-ml-[5px] tw-w-[120px]">
+                <div class="tw-text-subtitleGray tw-text-[13px]">Score:</div>
+                <div class="tw-text-white tw-text-[16px]">78030090</div>
+              </div>
+            </div>
+            <div
+              class="tw-flex tw-flex-col tw-items-left tw-text-left tw-w-[100px] tw-bg-lightPurple tw-rounded-md"
+            >
+              <div class="tw-p-2 tw-ml-[5px]">
+                <div class="tw-text-subtitleGray tw-text-[13px]">Prize:</div>
+                <div class="tw-text-lightGreen tw-text-[16px]">$3000</div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tw-flex tw-gap-[15px] tw-justify-between tw-p-[10px] tw-w-[380px]  tw-h-[60px] tw-rounded-md"
+          >
+            <div
+              class="tw-bg-indigo tw-rounded-md tw-justify-center tw-items-center tw-text-center tw-text-white tw-font-bold tw-text-[35px] tw-justify-center tw-flex tw-flex-col tw-w-[65px] tw-h-[60px]"
+            >
+              2
+            </div>
+            <div
+              class="tw-text-subtitleGray tw-text-center tw-justify-center tw-flex tw-flex-col tw-text-[16px] tw-mr-[8px]"
+            >
+              Tubeshock
+            </div>
+            <div
+              class="tw-flex tw-flex-col tw-items-left tw-text-left tw-w-[100px] tw-bg-lightPurple tw-rounded-md"
+            >
+              <div class="tw-p-2 tw-ml-[5px]">
+                <div class="tw-text-subtitleGray tw-text-[13px]">Score:</div>
+                <div class="tw-text-white tw-text-[16px]">78030090</div>
+              </div>
+            </div>
+            <div
+              class="tw-flex tw-flex-col tw-items-left tw-text-left tw-w-[100px] tw-bg-lightPurple tw-rounded-md"
+            >
+              <div class="tw-p-2 tw-ml-[5px]">
+                <div class="tw-text-subtitleGray tw-text-[13px]">Prize:</div>
+                <div class="tw-text-lightGreen tw-text-[16px]">$3000</div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tw-flex tw-gap-[15px] tw-justify-between tw-p-[10px] tw-w-[380px]  tw-bg-secondLightPurple tw-h-[60px] tw-rounded-md"
+          >
+            <div
+              class="tw-bg-indigo tw-rounded-md tw-justify-center tw-items-center tw-text-center tw-text-white tw-font-bold tw-text-[35px] tw-justify-center tw-flex tw-flex-col tw-w-[65px] tw-h-[60px]"
+            >
+              3
+            </div>
+            <div
+              class="tw-text-subtitleGray tw-text-center tw-justify-center tw-flex tw-flex-col tw-text-[16px] "
+            >
+              Dungeonliar
+            </div>
+            <div
+              class="tw-flex tw-flex-col tw-items-left tw-text-left tw-w-[100px] tw-bg-lightPurple tw-rounded-md"
+            >
+              <div class="tw-p-2 tw-ml-[5px]">
+                <div class="tw-text-subtitleGray tw-text-[13px]">Score:</div>
+                <div class="tw-text-white tw-text-[16px]">78030090</div>
+              </div>
+            </div>
+            <div
+              class="tw-flex tw-flex-col tw-items-left tw-text-left tw-w-[100px] tw-bg-lightPurple tw-rounded-md"
+            >
+              <div class="tw-p-2 tw-ml-[5px]">
+                <div class="tw-text-subtitleGray tw-text-[13px]">Prize:</div>
+                <div class="tw-text-lightGreen tw-text-[16px]">$3000</div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tw-flex tw-gap-[15px] tw-justify-between tw-p-[10px] tw-w-[380px]  tw-h-[60px] tw-rounded-md"
+          >
+            <div
+              class="tw-bg-indigo tw-rounded-md tw-justify-center tw-items-center tw-text-center tw-text-white tw-font-bold tw-text-[35px] tw-justify-center tw-flex tw-flex-col tw-w-[65px] tw-h-[60px]"
+            >
+              4
+            </div>
+            <div
+              class="tw-text-subtitleGray tw-text-center tw-justify-center tw-flex tw-flex-col tw-text-[16px] tw-mr-[8px]"
+            >
+              me_lebron
+            </div>
+            <div
+              class="tw-flex tw-flex-col tw-items-left tw-text-left tw-w-[100px] tw-bg-lightPurple tw-rounded-md"
+            >
+              <div class="tw-p-2 tw-ml-[5px]">
+                <div class="tw-text-subtitleGray tw-text-[13px]">Score:</div>
+                <div class="tw-text-white tw-text-[16px]">78030090</div>
+              </div>
+            </div>
+            <div
+              class="tw-flex tw-flex-col tw-items-left tw-text-left tw-w-[100px] tw-bg-lightPurple tw-rounded-md"
+            >
+              <div class="tw-p-2 tw-ml-[5px]">
+                <div class="tw-text-subtitleGray tw-text-[13px]">Prize:</div>
+                <div class="tw-text-lightGreen tw-text-[16px]">$3000</div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tw-flex tw-gap-[15px] tw-justify-between tw-p-[10px] tw-w-[380px]  tw-bg-secondLightPurple tw-h-[60px] tw-rounded-md"
+          >
+            <div
+              class="tw-bg-indigo tw-rounded-md tw-justify-center tw-items-center tw-text-center tw-text-white tw-font-bold tw-text-[35px] tw-justify-center tw-flex tw-flex-col tw-w-[65px] tw-h-[60px]"
+            >
+              5
+            </div>
+            <div
+              class="tw-text-subtitleGray tw-text-center tw-justify-center tw-flex tw-flex-col tw-text-[16px] tw-mr-[8px]"
+            >
+              tubeshock
+            </div>
+            <div
+              class="tw-flex tw-flex-col tw-items-left tw-text-left tw-w-[100px] tw-bg-lightPurple tw-rounded-md"
+            >
+              <div class="tw-p-2 tw-ml-[5px]">
+                <div class="tw-text-subtitleGray tw-text-[13px]">Score:</div>
+                <div class="tw-text-white tw-text-[16px]">78030090</div>
+              </div>
+            </div>
+            <div
+              class="tw-flex tw-flex-col tw-items-left tw-text-left tw-w-[100px] tw-bg-lightPurple tw-rounded-md"
+            >
+              <div class="tw-p-2 tw-ml-[5px]">
+                <div class="tw-text-subtitleGray tw-text-[13px]">Prize:</div>
+                <div class="tw-text-lightGreen tw-text-[16px]">$3000</div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tw-flex tw-gap-[15px] tw-justify-between tw-p-[10px] tw-w-[380px]  tw-h-[60px] tw-rounded-md"
+          >
+            <div
+              class="tw-bg-indigo tw-rounded-md tw-justify-center tw-items-center tw-text-center tw-text-white tw-font-bold tw-text-[35px] tw-justify-center tw-flex tw-flex-col tw-w-[65px] tw-h-[60px]"
+            >
+              6
+            </div>
+            <div
+              class="tw-text-subtitleGray tw-text-center tw-justify-center tw-flex tw-flex-col tw-text-[16px] tw-mr-[16px]"
+            >
+              gijoejane
+            </div>
+            <div
+              class="tw-flex tw-flex-col tw-items-left tw-text-left tw-w-[100px] tw-bg-lightPurple tw-rounded-md"
+            >
+              <div class="tw-p-2 tw-ml-[5px]">
+                <div class="tw-text-subtitleGray tw-text-[13px]">Score:</div>
+                <div class="tw-text-white tw-text-[16px]">78030090</div>
+              </div>
+            </div>
+            <div
+              class="tw-flex tw-flex-col tw-items-left tw-text-left tw-w-[100px] tw-bg-lightPurple tw-rounded-md"
+            >
+              <div class="tw-p-2 tw-ml-[5px]">
+                <div class="tw-text-subtitleGray tw-text-[13px]">Prize:</div>
+                <div class="tw-text-lightGreen tw-text-[16px]">$3000</div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tw-flex tw-gap-[15px] tw-justify-between tw-p-[10px] tw-w-[380px]  tw-bg-secondLightPurple tw-h-[60px] tw-rounded-md"
+          >
+            <div
+              class="tw-bg-indigo tw-rounded-md tw-justify-center tw-items-center tw-text-center tw-text-white tw-font-bold tw-text-[35px] tw-justify-center tw-flex tw-flex-col tw-w-[65px] tw-h-[60px]"
+            >
+              7
+            </div>
+            <div
+              class="tw-text-subtitleGray tw-text-center tw-justify-center tw-flex tw-flex-col tw-text-[16px] "
+            >
+              taigatigger
+            </div>
+            <div
+              class="tw-flex tw-flex-col tw-items-left tw-text-left tw-w-[100px] tw-bg-lightPurple tw-rounded-md"
+            >
+              <div class="tw-p-2 tw-ml-[5px]">
+                <div class="tw-text-subtitleGray tw-text-[13px]">Score:</div>
+                <div class="tw-text-white tw-text-[16px]">78030090</div>
+              </div>
+            </div>
+            <div
+              class="tw-flex tw-flex-col tw-items-left tw-text-left tw-w-[100px] tw-bg-lightPurple tw-rounded-md"
+            >
+              <div class="tw-p-2 tw-ml-[5px]">
+                <div class="tw-text-subtitleGray tw-text-[13px]">Prize:</div>
+                <div class="tw-text-lightGreen tw-text-[16px]">$3000</div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tw-flex tw-gap-[15px] tw-justify-between tw-p-[10px] tw-w-[380px]  tw-h-[60px] tw-rounded-md"
+          >
+            <div
+              class="tw-bg-indigo tw-rounded-md tw-justify-center tw-items-center tw-text-center tw-text-white tw-font-bold tw-text-[35px] tw-justify-center tw-flex tw-flex-col tw-w-[65px] tw-h-[60px]"
+            >
+              8
+            </div>
+            <div
+              class="tw-text-subtitleGray tw-text-center tw-justify-center tw-flex tw-flex-col tw-text-[16px] tw-mr-[-8px]"
+            >
+              Lastmagician
+            </div>
+            <div
+              class="tw-flex tw-flex-col tw-items-left tw-text-left tw-w-[100px] tw-bg-lightPurple tw-rounded-md"
+            >
+              <div class="tw-p-2 tw-ml-[5px]">
+                <div class="tw-text-subtitleGray tw-text-[13px]">Score:</div>
+                <div class="tw-text-white tw-text-[16px]">78030090</div>
+              </div>
+            </div>
+            <div
+              class="tw-flex tw-flex-col tw-items-left tw-text-left tw-w-[100px] tw-bg-lightPurple tw-rounded-md"
+            >
+              <div class="tw-p-2 tw-ml-[5px]">
+                <div class="tw-text-subtitleGray tw-text-[13px]">Prize:</div>
+                <div class="tw-text-lightGreen tw-text-[16px]">$3000</div>
+              </div>
+            </div>
+          </div>
+
+          
+
+
+          <div class="tw-bg-darkPink tw-w-[400px] tw-h-[140px] tw-rounded-md tw-flex tw-flex-col  tw-text-center tw-text-white">
+            <div class="tw-mt-[10px] tw-text-[25px] tw-font-bold ">Your Rank</div>
+            <div class="tw-flex tw-flex-row tw-gap-[10px] tw-p-[7px]">
+
+              <div>
+                <img src="images/lastmagician.png " class="tw-w-[150px]  tw-h-[80px]">
+              </div>
+              <div class="tw-bg-lightPurple tw-flex-col tw-font-bold tw-text-[35px] tw-h-[80px] tw-w-[128px] tw-rounded-md tw-flex tw-justify-center tw-text-center">
+                255
+              </div>
+              <div class="tw-flex tw-flex-col tw-gap-[10px] ">
+                <div class="tw-bg-lightPink tw-w-[140px] tw-h-[35px] tw-rounded-md tw-justify-center tw-flex tw-flex-col tw-text-left ">
+                  <span class="tw-text-[13px] tw-text-subtitleGray tw-ml-[20px]" >Score: <span class="tw-text-[16px] tw-text-white"> 78030090</span></span>
+                </div>
+                <div class="tw-bg-lightPink tw-w-[140px] tw-h-[35px] tw-rounded-md tw-justify-center tw-flex tw-flex-col tw-text-left">
+                  <span class="tw-text-[13px] tw-text-subtitleGray tw-ml-[20px]" >Prize: <span class="tw-text-[16px] tw-text-lightGreen"> $3000</span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+        </div>
+      </div>
+      <div>
+    </div>
+  </body>
+</html>

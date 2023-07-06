@@ -1,0 +1,32 @@
+/*LOAD FONTS*/
+@font-face {
+    font-family: MuseoRegular;
+    src: url("/theme/css/font/Museo-Regular-100.ttf") format("truetype");
+}
+@font-face {
+    font-family: MuseoRegular;
+    src: url("/theme/css/font/Museo-Regular-300.otf") format("opentype");
+    font-weight: 300;
+}
+@font-face {
+    font-family: MuseoRegular;
+    src: url("/theme/css/font/Museo-Regular-500.otf") format("opentype");
+    font-weight: 500;
+}
+@font-face {
+    font-family: MuseoRegular;
+    src: url("/theme/css/font/Museo-Regular-700.otf") format("opentype");
+    font-weight: 700;
+}
+@font-face {
+    font-family: MuseoRegular;
+   src: url("/theme/css/font/Museo-Regular-900.otf") format("opentype");
+    font-weight: 900;
+}
+
+.nav-tabs > li > a{
+    line-height:1.22857143 !important;
+}
+body, #myaccountDiv,p,h1,span,h2,h3,h4,h5,h6, #myaccountDiv a, .sweet-alert, .sweet-alert p, .colorbox, .casmodal-header,.modal-body,.btn{
+    font-family: "MuseoRegular", 'Helvetica', sans-serif !important;
+}

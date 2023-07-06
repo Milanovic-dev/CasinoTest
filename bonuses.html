@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url("https://fonts.cdnfonts.com/css/avenir");
+    </style>
+
+    <script>
+      tailwind.config = {
+        prefix: "tw-",
+        corePlugins: {
+          preflight: false,
+        },
+        theme: {
+          extend: {
+            colors: {
+              purple: "#352256",
+              lightPurple: "#503480",
+              secondLightPurple: "#32234B",
+              darkPurple: "#26173F",
+              white: "#FFFFFF",
+              yellow: "#FFDE01",
+              subtitleGray: "#BAACD2AD",
+              darkPink: "#C51DF1",
+              lightGreen: "#1DFF85",
+              lightPink: "#15324159",
+              darkViolet: "#9400D3",
+              indigo: "#4B0082",
+              darkMagenta: "#800080",
+              referalCardBackground: "#531265",
+              darkGreen: "rgba(10, 114, 99, 0.8834)",
+              background: "#802F84",
+              cardBackground: "rgba(128, 47, 132, 0)",
+              roulleteCardBackground: "rgba(128, 47, 132, 1)"
+            },
+            fontFamily: {
+              avenir: ['"Avenir"', "sans-sefir"],
+            },
+          },
+        },
+      };
+    </script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header" style="position: relative">
+      <div class="container d-flex justify-content-between">
+        <!-- Left logo & Menu button div start -->
+        <div class="logoDiv d-flex align-items-center">
+          <button class="menuIcon">
+            <span></span>
+            <span class="line2"></span>
+            <span class="line3"></span>
+          </button>
+
+          <div class="logo">
+            <a href="">CryptoClub.Casino</a>
+          </div>
+        </div>
+        <!-- Left logo & Menu button div end -->
+
+        <!-- Search div start -->
+        <div class="searchDiv">
+          <form action="">
+            <input type="search" class="form-control" placeholder="Search" />
+            <button class="serachBtn"></button>
+          </form>
+        </div>
+        <!-- Search div end -->
+
+        <!-- Butotns div start -->
+        <div class="buttonsDiv">
+          <button
+            class="btn btn-secondary"
+            data-bs-toggle="modal"
+            data-bs-target="#loginModal"
+          >
+            <span>log in</span>
+          </button>
+          <button
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#registerModal"
+          >
+            <span style="height: 100%;">sign up</span>
+          </button>
+        </div>
+        <!-- Butotns div end -->
+      </div>
+    </header>
+
+    
+      <div
+        class="tw-relative tw-bg-[url('images/bonuses-background.png')] tw-bg-referalCardBackground tw-w-full tw-h-[100%] lg:tw-h-[700px] tw-bg-no-repeat tw-bg-cover" 
+      >
+        <div class="tw-flex tw-flex-col tw-gap-[2px] tw-p-[50px] lg:tw-p-[120px]">
+          <div
+            class="tw-tracking-widest tw-text-white tw-text-[19px] tw-font-bold"
+          >
+            CRYPTOCLUB PRESENTS THE MOST
+          </div>
+          <span class="tw-text-yellow tw-text-[83px] tw-font-bold">Generous
+            <span class="tw-text-white tw-text-[83px] tw-font-bold">And</span></span
+          >
+
+          <span class="tw-text-white tw-text-[83px] tw-font-bold"
+            >Various
+            <span class="tw-text-yellow tw-text-[83px]">Bonuses</span></span
+          >
+          <div class="tw-text-white tw-text-[21px] tw-mb-[10px]">
+            Play with pleasure and get additional rewards during the game.
+          </div>
+          <div class="tw-text-white tw-text-[21px]">
+            Choose the most attractive bonuses or use them all at once
+          </div>
+
+          <div class="tw-flex tw-mt-[60px] tw-h-[53px] tw-items-center">
+            <button
+              class="btn btn-secondary"
+              data-bs-toggle="modal"
+              data-bs-target="#loginModal"
+              style="height: 53px;"
+            >
+              <span style="width: 200px; height: 100%;">sign up</span>
+            </button>
+            <div>
+              <img
+                src="images/present.png"
+                class="tw-ml-[-30px] tw-z-10 tw-relative"
+              />
+            </div>
+            <div
+              class="tw-flex tw-h-[53px] tw-bg-white tw-ml-[-70px] tw-pr-[15px] tw-p-[10px] tw-rounded-lg tw-text-center tw-items-center"
+            >
+              <span class="tw-text-black tw-font-bold tw-ml-[20px]"
+                >get
+                <span class="tw-text-darkPink tw-font-bold tw-text-[12px]"
+                  >1 000</span
+                >
+                free spins +
+                <span class="tw-text-darkPink tw-font-bold tw-text-[12px]"
+                  >250%</span
+                >
+                on you deposit</span
+              >
+            </div>
+          </div>
+        </div>
+        <div>
+          <img
+            src="images/sweeptakes-character.png"
+            class="tw-absolute tw-right-0 tw-bottom-0 tw-h-full tw-hidden lg:tw-block"
+          />
+        </div>
+      </div>
+
+      <div class="tw-flex tw-mx-auto tw-mt-[200px] lg:tw-mt-[0px]">
+        <div
+          class="tw-grid tw-z-100 tw-relative tw-grid-cols-1 sm:tw-grid-cols-2 md:tw-grid-cols-3 lg:tw-grid-cols-4 xl:tw-grid-cols-5 2xl:tw-grid-cols-5 tw-mx-auto tw-max-w-[1600px] tw-gap-[100px] sm:tw-gap-[70px] md:tw-gap-[70px] lg:tw-gap-[20px] tw-mt-[-40px] tw-justify-items-center tw-place-items-center"
+        >
+          <div
+            class="tw-flex tw-flex-col tw-justify-end tw-rounded-lg tw-w-[230px] tw-h-[115px] tw-bg-lightPurple tw-justify-items-center tw-place-items-center"
+          >
+            <img
+              src="images/much-crypto.png"
+              class="tw-mb-[10px] tw-w-[156px] tw-h-[125px] tw-transition tw-ease-in-out tw-duration-500 tw-transform hover:tw-scale-110"
+            />
+            <div class="tw-text-white tw-text-[16px]">Get Much Crypto</div>
+            <div class="tw-text-white tw-text-[16px] tw-mb-[20px]">
+              For free Every Day
+            </div>
+          </div>
+
+          <div
+            class="tw-flex tw-flex-col tw-justify-end tw-rounded-lg tw-w-[230px] tw-h-[115px] tw-bg-lightPurple tw-justify-items-center tw-place-items-center"
+          >
+            <img
+              src="images/1image.png"
+              class="tw-mb-[10px] tw-w-[150px] tw-h-[100px] tw-transition tw-ease-in-out tw-duration-500 tw-transform hover:tw-scale-110"
+            />
+            <div class="tw-text-white tw-text-[16px]">Raise Your Rank And</div>
+            <div class="tw-text-white tw-text-[16px] tw-mb-[20px]">
+              Get More Bonuses
+            </div>
+          </div>
+
+          <div
+            class="tw-flex tw-flex-col tw-justify-end tw-rounded-lg tw-w-[230px] tw-h-[115px] tw-bg-lightPurple tw-justify-items-center tw-place-items-center"
+          >
+            <img
+              src="images/mining.png"
+              class="tw-mb-[10px] tw-w-[150px] tw-h-[123px] tw-transition tw-ease-in-out tw-duration-500 tw-transform hover:tw-scale-110"
+            />
+            <div class="tw-text-white tw-text-[16px]">Mining & Staking Up</div>
+            <div class="tw-text-white tw-text-[16px] tw-mb-[20px]">
+              To 10% APY
+            </div>
+          </div>
+
+          <div
+            class="tw-flex tw-flex-col tw-justify-end tw-rounded-lg tw-w-[230px] tw-h-[115px] tw-bg-lightPurple tw-justify-items-center tw-place-items-center"
+          >
+            <img
+              src="images/trophy.png"
+              class="tw-mb-[10px] tw-w-[171px] tw-h-[156px] tw-transition tw-ease-in-out tw-duration-500 tw-transform hover:tw-scale-110"
+            />
+            <div class="tw-text-white tw-text-[16px]">Catch Bonuses For</div>
+            <div class="tw-text-white tw-text-[16px] tw-mb-[20px]">
+              Being Active in Chat
+            </div>
+          </div>
+
+          <div
+            class="tw-flex tw-flex-col tw-justify-end tw-rounded-lg tw-w-[230px] tw-h-[115px] tw-bg-lightPurple tw-justify-items-center tw-place-items-center"
+          >
+            <img
+              src="images/shield.png"
+              class="tw-mb-[10px] tw-w-[176px] tw-h-[153px] tw-transition tw-ease-in-out tw-duration-500 tw-transform hover:tw-scale-110"
+            />
+            <div class="tw-text-white tw-text-[16px]">Other Additional</div>
+            <div class="tw-text-white tw-text-[16px] tw-mb-[20px]">Perks</div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="tw-flex tw-relative tw-rounded-[20px] tw-mx-auto tw-w-[90%]  md:tw-w-[1230px] tw-mt-[50px] tw-h-[460px]" style="border-radius: 20px;
+        box-shadow: 0px 20px 20px -10px black; background: linear-gradient(223deg, #802F84 0%, #360C61 100%);"
+      >
+
+          <img
+          src="images/roullete-mask.png"
+          class="tw-rounded-[20px] tw-absolute tw-bottom-0 tw-opacity-[10%] md:tw-block md:tw-relative md:tw-opacity-[100%]"
+          style="-webkit-mask-image: linear-gradient(88deg, white 70%, #ff99ed00); mask-image: linear-gradient(88deg, white 70%, #ff99ed00);"
+          />
+       
+
+        <div class="tw-flex tw-flex-col tw-gap-[10px] tw-mt-[50px] tw-p-[30px] md:tw-p-[0px] md:tw-ml-[-100px] md:tw-mr-[40px]" style="z-index: 1">
+          <span class="tw-text-white tw-font-bold tw-text-[35px] ">
+            Get <span class="tw-text-yellow">100 No Deposit</span> Free Spins for registration
+          </span>
+          <div class="tw-flex tw-text-white tw-text-[16px] tw-flex-col tw-gap-[10px]">
+            <div style="font-weight: 300; line-height: 3rem">
+              Here is a sweet present for newcomers. Join the BetFury family and immediately get 100 Free Spins with no deposit. Play and enjoy your winnings!
+            </div>
+            <div class="tw-flex tw-mt-[30px]">
+              <button
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#loginModal"
+            >
+              <span style="width: 275px; height: 54px;">sign up & activate bonus</span>
+            </button>
+            </div>
+          </div>
+        </div>
+          <div class="tw-absolute tw-rounded-[20px] tw-top-0 tw-left-0 tw-w-full tw-h-full tw-opacity-50" style="background: linear-gradient(223deg, #360c6100, #f645ff91);"></div>
+
+        
+      </div>
+
+    <div
+        class="tw-flex md:tw-flex md:tw-flex-col lg:tw-flex lg:tw-flex-row xl:tw-flex-row lg:tw-flex  md:tw-h-[820px] lg:tw-h-[450px] tw-relative tw-mx-auto tw-w-[90%] md:tw-w-[700px] lg:tw-w-[1230px] 2xl:tw-w-[1230px] tw-rounded-[20px] tw-mt-[50px]" style="background:linear-gradient(to top right, #360c61, #802f84);" 
+      > 
+        <div
+          style="
+            background-image: url(images/welcome-pack-bg.png);
+            height: 100%;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 20px;
+            box-shadow: 0px 20px 20px -10px black;"
+          
+          
+        >
+          <div class="tw-flex tw-flex-col lg:tw-flex-row tw-pl-[50px] tw-pt-[80px]">
+            <div class="tw-flex tw-flex-col">
+              <div
+                class="tw-text-[35px] tw-text-white tw-font-bold tw-mb-[20px]"
+              >
+                Choose Your <span class="tw-text-yellow">Welcome</span> Pack
+              </div>
+              <div class="tw-flex tw-flex-col tw-gap-[10px] tw-mb-[40px]">
+                <div class="tw-text-white tw-text-[16px]">
+                  The best gifts from BetFury are Bonuses for every tase. Check
+                  three
+                </div>
+                <div class="tw-text-white tw-text-[16px]">
+                  Bonus Packs with Free Spins and Deposit Bonus in the bonus
+                  Cabinet
+                </div>
+                <div class="tw-text-white tw-text-[16px]">
+                  Choose a desirable pack, make a wish, and activate it!
+                </div>
+              </div>
+              <div>
+                <button
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#registerModal"
+                >
+                  <span style="width: 275px; height: 54px">Choose pack</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="tw-flex tw-relative lg:tw-w-1/2 tw-items-center tw-justify-center">
+              <img
+                src="images/welcomegirl.png"
+                class="tw-h-auto tw-static lg:tw-absolute tw-right-[-100px] lg:tw-right-[-20px]   md:tw-mt-[1px] tw-mt-[-5px] "
+                
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="tw-mt-[100px]  tw-text-center tw-items-center">
+        <span class="tw-text-white tw-text-[35px] tw-font-bold">Get A <span class="tw-text-yellow tw-font-bold tw-text-[35px]">Lot Of Free </span> Cryptocurrency</span>
+      </div>
+
+      <div class="tw-flex tw-mb-[50px] tw-flex-col tw-justify-center tw-items-center tw-gap-[20px] xl:tw-w-[1200px] 2xl:tw-w-[1233px] lg:tw-w-[1000px] md:tw-w-[800px] sm:tw-w-[100%] tw-w-[100%] xl:tw-flex xl:tw-flex-row tw-mx-auto tw-mt-[30px]">
+        <div class="tw-relative tw-flex-col tw-flex tw-w-[90%] lg:tw-w-1/2 xl:tw-w-1/2 2xl:tw-w-1/2  md:tw-w-[500px] sm:tw-w-[500px] tw-h-[480px] tw-z-100 tw-relative tw-bg-[url('images/fury-wheel-bg.png')]  tw-rounded-[20px] tw-bg-cardBackground   tw-bg-no-repeat tw-bg-cover">
+
+          <div class="tw-absolute tw-w-full tw-h-full tw-rounded-[20px]" style="background: linear-gradient(223deg, #802F84 0%, #360C61 100%); opacity: 0.7; z-index: -1;"></div>
+          <div class="tw-flex tw-flex-col tw-text-center tw-mx-auto tw-mt-[30px]">
+
+            <div class="tw-text-[10px] tw-mx-auto tw-justify-center tw-flex tw-text-yellow tw-h-[35px] tw-text-center tw-items-center tw-font-bold tw-w-[185px] tw-bg-purple tw-rounded-lg" style="border-style: solid; border-width: 2px; border-color: #503480;">
+              FREE TO PLAY
+            </div>
+            <div class="tw-mt-[10px]">
+              <span class="tw-text-white tw-text-[35px] tw-font-bold">Fury <span class="tw-text-yellow tw-text-[35px] tw-font-bold">Wheel</span></span>
+            </div>
+            <div class="tw-text-white tw-text-[20px] tw-mb-[5px]">Spin Fury Wheel Twice A Day And Win</div>
+            <div class="tw-text-white tw-text-[20px]">Up To 1 BTC</div>
+
+          </div>
+          <div class="tw-flex tw-ml-[50px] tw-mt-[40px] tw-flex-col tw-gap-[10px] tw-text-white tw-text-[16px] tw-z-10">
+            <div>Get FunFury tokens or real crypto just</div>
+            <div>for free from Rank 1 permanently.</div>
+            <div>Special Fury Wheel rewards users of</div>
+            <div>Ranks 2-16 with real crypto</div>
+            <div  class="tw-mt-[20px]">
+              <button
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#registerModal"
+            >
+              <span style="width: 185px; height: 41px">SPIN AND WIN</span>
+            </button>
+
+            </div>
+          </div>
+          <img src="images/wheel-casino-copy.png" class="tw-absolute tw-z-100 tw-bottom-0 tw-right-0 tw-rounded-[20px] tw-opacity-50 md:tw-opacity-100" alt="">
+          
+        </div>
+
+
+        <div class=" tw-relative tw-flex-col tw-flex tw-w-[90%]  lg:tw-w-1/2 xl:tw-w-1/2 2xl:tw-w-1/2 md:tw-w-[500px] sm:tw-w-[500px] tw-h-[480px] tw-z-100 tw-relative tw-bg-[url('images/cryptoboxbg.png')] tw-rounded-[20px] tw-bg-cardBackground   tw-bg-no-repeat tw-bg-cover">
+          
+          <div class="tw-absolute tw-w-full tw-h-full tw-rounded-[20px]" style="background: linear-gradient(223deg, #802F84 0%, #360C61 100%); opacity: 0.7; z-index: -1;"></div>
+          <div class="tw-flex tw-flex-col tw-text-center tw-mx-auto tw-mt-[30px]">
+            <div class="tw-text-[10px] tw-mx-auto tw-justify-center tw-flex tw-text-yellow tw-h-[35px] tw-text-center tw-items-center tw-font-bold tw-w-[185px] tw-bg-purple tw-rounded-lg" style="border-style: solid; border-width: 2px; border-color: #503480;">
+              FREE TO PLAY
+            </div>
+            <div class="tw-mt-[10px]">
+              <span class="tw-text-yellow tw-text-[35px] tw-font-bold">Free <span class="tw-text-white tw-text-[35px] tw-font-bold">Crypto Boxes</span></span>
+            </div>
+            <div class="tw-text-white tw-text-[20px] tw-mb-[5px]">Fill Your Wallet With Free Crypto Every</div>
+            <div class="tw-text-white tw-text-[20px]">60 minutes</div>
+
+          </div>
+          <div class="tw-flex tw-ml-[50px] tw-mt-[40px] tw-flex-col tw-gap-[10px] tw-text-white tw-text-[16px] tw-z-[10]">
+            <div>Open the Free BTC Box. Special</div>
+            <div>FunFury Box is filled with FunFury</div>
+            <div>tokens for players of Rank. Withdraw</div>
+            <div>coins, play or manage it as you like!</div>
+            <div  class="tw-mt-[20px]">
+              <button
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#registerModal"
+            >
+              <span style="width: 185px; height: 41px">OPEN ALL BOXES</span>
+            </button>
+
+            </div>
+          </div>
+
+          <img src="images/crypto-coins.png" class="tw-absolute tw-z-100 tw-bottom-0 tw-right-0 tw-opacity-50 md:tw-opacity-100" alt="">
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div>
+      <!-- Lavish cashback up to 25%... -->
+    </div>
+
+    <div class="tw-flex tw-mt-[280px] tw-justify-center tw-text-center tw-items-center tw-mx-auto">
+      <div class="tw-text-[35px] tw-text-white tw-font-bold">Rejoice In The Best Bonuses On Bey Fury <br/> <span class="tw-text-yellow">From Rank 1</span></div>
+      <!-- Referal cabinet and share & win cards -->
+    </div>
+
+    <div class="tw-w-[1230px] tw-relative tw-rounded-[20px] tw-h-[1000px] tw-mx-auto tw-mt-[140px] tw-p-[60px]" style="background: linear-gradient(223deg, #802F84 0%, #360C61 100%);box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);">
+      <div class="tw-flex tw-justify-evenly">
+        <div class="tw-flex-2 tw-max-w-[490px]">
+          <div class="tw-text-[10px] tw-justify-center tw-flex tw-text-yellow tw-h-[35px] tw-text-center tw-items-center tw-font-bold tw-w-[185px] tw-bg-purple tw-rounded-lg" style="border-style: solid; border-width: 2px; border-color: #503480;">
+            FROM RANK 1
+          </div>
+          <div class="tw-text-[35px] tw-text-white tw-font-bold tw-mt-[30px]">
+            Lavish Cashback Up To <span class="tw-text-yellow">25%</span>
+          </div>
+          <div class="tw-text-[20px] tw-text-white tw-mt-[10px]">
+            Get money back without any additional conditions from your first bet
+          </div>
+          <div class="tw-text-[16px] tw-text-white tw-mt-[30px]" style="line-height: 3rem;">
+            Getting Сashback has never been so easy. There are no restrictions: the more you play - the more you get, because with each Rank the percentage becomes larger! Withdraw the Bonus twice a week.
+          </div>
+          <div>
+            <button class="btn btn-secondary tw-w-[275px] tw-mt-[60px] tw-h-[53px]">
+              <span style="height: 100%;">CASHBACK DETAILS</span>
+            </button>
+          </div>
+        </div>
+        <div class="tw-flex-1">
+          <div class="tw-w-[760px] tw-absolute tw-right-[-100px] tw-top-[-180px]">
+            <img src="images/total-paid2.png" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="tw-flex tw-gap-[160px] tw-mt-[150px]">
+        <div>
+          <div class="tw-text-[10px] tw-justify-center tw-flex tw-text-yellow tw-h-[35px] tw-text-center tw-items-center tw-font-bold tw-w-[185px] tw-bg-purple tw-rounded-lg" style="border-style: solid; border-width: 2px; border-color: #503480;">
+            FROM RANK 1
+          </div>
+          <div class="tw-text-[35px] tw-text-white tw-font-bold tw-mt-[20px]">
+            Daily Tasks
+          </div>
+          <div class="tw-text-[16px] tw-text-white tw-mt-[10px]" style="line-height: 3rem;">
+            Increase your gaming experience by having fun. Complete Daily Tasks by playing different In-house games and get extra crypto.
+          </div>
+          <div class="tw-text-[16px] tw-text-yellow tw-mt-[25px]" style="line-height: 3rem; text-decoration: underline;">
+            Read More<img src="images/Arrow.svg" alt="" class="tw-ml-[10px]">
+          </div>
+        </div>
+
+        <div>
+          <div class="tw-text-[10px] tw-justify-center tw-flex tw-text-yellow tw-h-[35px] tw-text-center tw-items-center tw-font-bold tw-w-[185px] tw-bg-purple tw-rounded-lg" style="border-style: solid; border-width: 2px; border-color: #503480;">
+            FROM RANK 1
+          </div>
+          <div class="tw-text-[35px] tw-text-white tw-font-bold tw-mt-[20px]">
+            Catch Mr. Fury
+          </div>
+          <div class="tw-text-[16px] tw-text-white tw-mt-[10px]" style="line-height: 3rem;">
+            Stay on BetFury and keep your eyes on Tricky Mr. Fury. Catch him at once to get a BFG Bonus immediately on your balance.
+          </div>
+          <div class="tw-text-[16px] tw-text-yellow tw-mt-[25px]" style="line-height: 3rem; text-decoration: underline;">
+            Read More<img src="images/Arrow.svg" alt="" class="tw-ml-[10px]">
+          </div>
+        </div>
+
+        <div>
+          <div class="tw-text-[10px] tw-justify-center tw-flex tw-text-yellow tw-h-[35px] tw-text-center tw-items-center tw-font-bold tw-w-[185px] tw-bg-purple tw-rounded-lg" style="border-style: solid; border-width: 2px; border-color: #503480;">
+            FROM RANK 1
+          </div>
+          <div class="tw-text-[35px] tw-text-white tw-font-bold tw-mt-[20px]">
+            Rakeback
+          </div>
+          <div class="tw-text-[16px] tw-text-white tw-mt-[10px]" style="line-height: 3rem;">
+            Get a bonus for each bet every 20 minutes by playing Slots & In-house games. The higher is your Rank - the bigger is the Bonus.
+          </div>
+          <div class="tw-text-[16px] tw-text-yellow tw-mt-[25px]" style="line-height: 3rem; text-decoration: underline;">
+            Read More<img src="images/Arrow.svg" alt="" class="tw-ml-[10px]">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tw-text-[35px] tw-text-white tw-font-bold tw-text-center tw-mt-[200px]">Rejoice In The Best Bonuses On Bey Fury <br/> <span class="tw-text-yellow">From Rank 1</span></div>
+    <div class="tw-max-w-[1230px] tw-flex tw-gap-[30px] tw-justify-center tw-mx-auto tw-mt-[32px]">
+      
+      <div class="tw-w-[607px] tw-h-[453px] tw-relative tw-rounded-[21px] tw-pt-[56px] tw-pl-[70px]" style="background: linear-gradient(223deg, #802F84 0%, #360C61 100%); box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);">
+        <div class="tw-max-w-[280px]">
+          <div class="tw-text-[35px] tw-font-bold tw-text-white">
+            <span class="tw-text-yellow">Referral</span> Cabinet
+          </div>
+          <div class="tw-text-[20px] tw-text-white tw-mt-[8px]">
+            Create your own Campaigns and invite more people
+          </div>
+          <div class="tw-text-white tw-mt-[22px]" style="line-height: 3rem;">
+            Get Bonuses for bets made by your referrals in In-house games, Slots, Sports Betting, and for mined BFG tokens. More referrals - more income.
+          </div>
+          <div class="tw-mt-[22px]">
+            <button class="btn btn-primary">
+              <span style="height: 100%;">
+                REFERRAL CABINET
+              </span>
+            </button>
+          </div>
+        </div>
+        <div class="tw-absolute tw-top-0 tw-right-0">
+          <img src="images/megaphone.svg" alt="" />
+        </div>
+      </div>
+
+      <div class="tw-w-[607px] tw-h-[453px] tw-relative tw-rounded-[21px] tw-pt-[56px] tw-pl-[70px]" style="z-index: -2; background: linear-gradient(223deg, #802F84 0%, #360C61 100%); box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);">
+        <div class="tw-max-w-[280px]" style="z-index: 1;">
+          <div class="tw-text-[35px] tw-font-bold tw-text-white">
+            <span class="tw-text-yellow">Share</span> & Win
+          </div>
+          <div class="tw-text-[20px] tw-text-white tw-mt-[8px]">
+            Tell your friends about your results and win crypto
+          </div>
+          <div class="tw-text-white tw-mt-[22px]" style="line-height: 3rem; z-index: 1;">
+            Show your success and get an additional reward. Share your winning bets, staking payouts, cashback and other achievements on social media.
+          </div>
+          <div class="tw-mt-[22px]">
+            <button class="btn btn-primary">
+              <span style="height: 100%;">
+                REFERRAL CABINET
+              </span>
+            </button>
+          </div>
+        </div>
+        <div class="tw-absolute tw-bottom-0 tw-right-0" style="z-index: -1;">
+          <img src="images/phone.svg" alt="" />
+        </div>
+      </div>
+    </div>
+
+
+    <!-- coins down start -->
+    <div class="tw-bg-[url('images/bonuses-coins.png')] tw-bg-bottom tw-relative tw-h-[100vh] tw-bg-no-repeat tw-bg-cover" style="overflow: visible;">
+      <div class="tw-mx-auto tw-text-center tw-max-w-[815px]">
+        <div class="tw-w-fit tw-text-center tw-text-[35px] tw-text-white tw-font-bold tw-pt-[300px]">
+          Your <span class="tw-text-yellow">Bonuses</span> Are Already Here - <span class="tw-text-yellow">Take Them All</span>
+        </div>
+        <div class="tw-w-fit tw-text-center tw-text-white tw-text-[21px] tw-mt-[30px] tw-max-w-[733px] tw-mx-auto">
+          Get lots of nice gifts during the exciting game on BetFury! Cool crypto income and great emotions are guaranteed. You Play - We pay!
+        </div>
+        <div class="tw-flex tw-mt-[60px] tw-h-[53px] tw-items-center tw-mx-auto tw-justify-center">
+          <button
+            class="btn btn-secondary"
+            data-bs-toggle="modal"
+            data-bs-target="#loginModal"
+            style="height: 53px; margin-right: -10px;"
+          >
+            <span style="width: 200px; height: 100%;">sign up</span>
+          </button>
+          <div>
+            <img
+              src="images/present.png"
+              class="tw-ml-[-55px] tw-z-10 tw-relative tw-w-[150px]"
+            />
+          </div>
+          <div
+            class="tw-flex tw-h-[53px] tw-bg-white tw-ml-[-70px] tw-pr-[15px] tw-p-[10px] tw-rounded-lg tw-text-center tw-items-center"
+          >
+            <span class="tw-text-black tw-font-bold tw-ml-[20px]"
+              >get
+              <span class="tw-text-darkPink tw-font-bold tw-text-[12px]"
+                >1 000</span
+              >
+              free spins +
+              <span class="tw-text-darkPink tw-font-bold tw-text-[12px]"
+                >250%</span
+              >
+              on you deposit</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- coins down stop -->
+
+    <div class="tw-max-w-full tw-overflow-x-hidden">
+        
+      <footer class="foooter">
+        
+        <!-- Click to scroll top start -->
+        <a title="Scroll Top" class="scrollTop clickScroll" href="body" rel="nofollow"></a>
+        <!-- Click to scroll top end -->
+        
+        <div class="container">
+          
+          <!-- Footer Four column div start -->
+          <div class="fourColumn d-flex justify-content-md-between">
+            <!-- content div start -->
+            <div class="footerCon">
+              <h2>CryptoClub.Casino</h2>                    
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <button class="btn btn-primary btn-square"><span>+18</span></button>
+            </div>
+            <!-- content div start -->
+            
+            <!-- Footer Page menu div start -->
+            <div class="footerMenu">
+              <h4>Page</h4>
+              <ul>                        
+                <li><a href="">Provably Fair</a></li>
+                <li><a href="">Returning Player</a></li>
+                <li><a href="">Daily Login Rewards</a></li>
+                <li><a href="">Terms and Conditions</a></li>
+                <li><a href="">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <!-- Footer menu div end -->
+            
+            <!-- Footer menu div start -->
+            <div class="footerMenu">
+              <h4>Information</h4>
+              <ul>                        
+                <li><a href="">Provably Fair</a></li>
+                <li><a href="">Returning Player</a></li>
+                <li><a href="">Daily Login Rewards</a></li>
+                <li><a href="">Terms and Conditions</a></li>
+                <li><a href="">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <!-- Footer menu div end -->
+            
+            <!-- Footer menu div start -->
+            <div class="footerMenu">
+              <h4>Other Links</h4>
+              <ul>                        
+                <li><a href="">Provably Fair</a></li>
+                <li><a href="">Returning Player</a></li>
+                <li><a href="">Daily Login Rewards</a></li>
+                <li><a href="">Terms and Conditions</a></li>
+                <li><a href="">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <!-- Footer menu div end -->          
+          </div>             
+          <!-- Footer Four column div end -->         
+          
+          
+          <!-- Logo slider div start -->
+          <div class="logoSlider">
+            
+            <div id="logos" class="logosWrapper">
+              <div class="logoImg"><span><img src="images/neosurf.svg" alt=""></span></div>
+              <div class="logoImg"><span><img src="images/inte.svg" alt=""></span></div>
+              <div class="logoImg"><span><img src="images/ecopayz.svg" alt=""></span></div>
+              <div class="logoImg"><span><img src="images/visa.svg" alt=""></span></div>
+              <div class="logoImg"><span><img src="images/netellere.svg" alt=""></span></div>
+              <div class="logoImg"><span><img src="images/skrill.svg" alt=""></span></div>
+              <div class="logoImg"><span><img src="images/mastercard.svg" alt=""></span></div>
+              <div class="logoImg"><span><img src="images/secure.svg" alt=""></span></div>
+              <div class="logoImg"><span><img src="images/mifinity.svg" alt=""></span></div>
+              <div class="logoImg"><span><img src="images/paysafe-card.svg" alt=""></span></div>
+              <div class="logoImg"><span><img src="images/discover.svg" alt=""></span></div>                        
+            </div>
+          </div>
+          <!-- Logo slider div end -->
+          
+          <!-- Licence text div start -->
+          <div class="licensTxt">
+            <h4>Licensing and Regulations</h4>
+            <p>Genesis Global Limited is incorporated under the laws of Malta (C65325) at registered address 28, GB Buildings, Level 3, Watar Street, Ta’ Xbiex, XBX 1301, Malta. Genesis Global Limited is licensed and regulated by the British Gambling Commission with account 45235. Gambling can be harmful; our Responsible Gaming page helps you to stay in control.</p>
+            <p>UNDERAGE GAMBLING IS AN OFFENCE.</p>
+          </div>
+          <!-- Licence text div end -->
+          
+          <!-- Gambling logos div start -->
+          <div class="gambLing d-lg-flex justify-content-lg-between">
+            <img src="images/gambling-commission.svg" alt="" />
+            <img src="images/gam-stop.svg" alt="" />
+            <img src="images/begamble-aware.svg" alt="" />
+            <img src="images/responsible-gaming-foundation-malta.svg" alt="" />
+            <img src="images/mga.svg" alt="" />
+            <img src="images/genesis.svg" alt="" />                    
+          </div>
+          <!-- Gambling logos div end -->
+          
+          <!-- Copyright div start -->
+          <div class="copyRight">
+            
+            <span class="copyTxt">&copy; 2022 All Rights Reserved</span>
+            
+            <!-- Select language start -->
+            <div class="selctLanguage">
+              <button class="langWrapper selectedLang dropdown-toggle" type="button" id="languageBtn" data-bs-toggle="dropdown" aria-expanded="false">                            
+                <i class="flag-usa"></i>
+                <span>English</span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="languageBtn">
+                <li><a href="" class="langWrapper"><i class="flag-usa"></i><span>English</span></a></li>
+                <li><a href="" class="langWrapper"><i class="flag-deutch"></i><span>Deutch</span></a></li>
+                <li><a href="" class="langWrapper"><i class="flag-espan"></i><span>Española</span></a></li>
+              </ul>                                       
+            </div>                     
+            <!-- Select language end -->                       
+          </div>
+          <!-- Copyright div end -->
+          
+          
+        </div>
+      </footer>
+    </div>
+  
+
+  </body>
+</html>

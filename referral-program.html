@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url("https://fonts.cdnfonts.com/css/avenir");
+    </style>
+
+    <script>
+      tailwind.config = {
+        prefix: "tw-",
+        corePlugins: {
+          preflight: false,
+        },
+        theme: {
+          extend: {
+            colors: {
+              purple: "#352256",
+              lightPurple: "#503480",
+              secondLightPurple: "#32234B",
+              darkPurple: "#26173F",
+              white: "#FFFFFF",
+              yellow: "#FFDE01",
+              subtitleGray: "#BAACD2AD",
+              darkPink: "#C51DF1",
+              lightGreen: "#1DFF85",
+              lightPink: "#15324159",
+              referalCardBackground: '#531265'
+            },
+            fontFamily: {
+              avenir: ['"Avenir"', "sans-sefir"],
+            },
+          },
+        },
+      };
+    </script>
+    <title>Document</title>
+  </head>
+  <body class="tw-overflow-x-hidden">
+    <header class="header" style="position: relative">
+      <div class="container d-flex justify-content-between">
+        <!-- Left logo & Menu button div start -->
+        <div class="logoDiv d-flex align-items-center">
+          <button class="menuIcon">
+            <span></span>
+            <span class="line2"></span>
+            <span class="line3"></span>
+          </button>
+
+          <div class="logo">
+            <a href="">CryptoClub.Casino</a>
+          </div>
+        </div>
+        <!-- Left logo & Menu button div end -->
+
+        <!-- Search div start -->
+        <div class="searchDiv">
+          <form action="">
+            <input type="search" class="form-control" placeholder="Search" />
+            <button class="serachBtn"></button>
+          </form>
+        </div>
+        <!-- Search div end -->
+
+        <!-- Butotns div start -->
+        <div class="buttonsDiv">
+          <button
+            class="btn btn-secondary"
+            data-bs-toggle="modal"
+            data-bs-target="#loginModal"
+          >
+            <span>log in</span>
+          </button>
+          <button
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#registerModal"
+          >
+            <span>sign up</span>
+          </button>
+        </div>
+        <!-- Butotns div end -->
+      </div>
+    </header>
+
+    <div
+      class="tw-bg-[url('images/referral-group-coins.png')] tw-bg-bottom tw-h-[40vh] sm:tw-h-[70vh] md:tw-h-[70vh] 2xl:tw-h-[700px] xl:tw-w-[1510px] xl:tw-h-[550px] 2xl:tw-w-[1920px] tw-bg-no-repeat tw-bg-cover"
+    >
+    <div class="tw-mx-auto tw-w-fit">
+      <div class="tw-mx-auto tw-w-fit tw-text-[83px] tw-text-white tw-font-bold tw-mt-[200px]">
+        <span class="tw-text-yellow">Referral</span> Program
+      </div>
+      <div style="line-height: 4rem;" class="tw-max-w-[1050px] tw-text-[21px] tw-text-center tw-text-white tw-mt-[30px]">
+        Let the whole world know about BetFury - Bring people here and earn more! Receive passive income for each player who follows your link, registers and plays actively on the platform. Referral Bonuses will be credited automatically for bets made by your referrals in In-house games, Slots, Sports and mined BFG tokens. The more players you attract - the higher income you’ll get.
+      </div>
+      <div
+        class="tw-w-fit tw-mx-auto tw-mt-[40px]"
+      >
+        <button
+          class="btn btn-secondary tw-h-[53px]"
+          data-bs-toggle="modal"
+          data-bs-target="#loginModal"
+        >
+          <span style="width: 275px;">GET PROMO MATERIALS</span>
+        </button>
+      </div>
+    </div>
+    </div>
+
+  <div class="tw-grid tw-grid-cols-1 sm:tw-grid-cols-1 md:tw-grid-cols-1 tw-max-w-[1320px] lg:tw-grid-cols-2 xl:tw-grid-cols-2 2xl:tw-grid-cols-3 tw-gap-[30px] tw-mx-auto tw-justify-items-center tw-place-items-center tw-mt-[-120px]">
+
+
+    <div 
+      class="tw-transition tw-ease-in-out tw-duration-500 tw-transform hover:tw-scale-110 tw-relative tw-mt-[60px] sm:tw-mt-[0px] tw-h-[460px] tw-w-[400px]  tw-bg-referalCardBackground" 
+      style="border-radius: 20px; box-shadow: 0px 20px 20px -10px black; background: linear-gradient(223deg, #802F84 0%, #360C61 100%);"
+    >
+      <div style="background-image: url(images/referalpureprofitbg.png);height: 100%;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;">
+      <div class="tw-flex tw-flex-col tw-text-center tw-text-white tw-ml-[100px]">
+        <div class="tw-relative tw-mt-[70px] tw-mx-auto tw-text-left">
+
+          <span class="tw-text-white tw-font-extrabold tw-text-[100px]" style="letter-spacing: -2.5rem;">15<span class="tw-text-white tw-text-7xl tw-font-bold tw-absolute tw-text-center  tw-top-[10px] tw-right-[90px]">%</span></span>
+          <div class="tw-text-white tw-text-[25px] tw-ml-[10px]">From Pure Profit</div>
+          <div class="tw-text-yellow tw-text-[16px] tw-ml-[10px] tw-mt-[10px]">(based on house edge 2%) </div>
+          <div class="tw-ml-[10px] tw-text-white tw-text-[14px] tw-mt-[30px] tw-flex tw-flex-col tw-gap-[10px]">
+            <div class="tw-flex">15% from platform's house edge</div>
+            <div class="tw-flex">will be paid you immediately after</div>
+            <div>each referrals winning bet.</div>
+
+          </div>
+        </div>
+
+      </div>
+      <div class="tw-absolute tw-text-base tw-justify-center tw-flex tw-text-yellow tw-h-[35px] tw-text-center tw-items-center tw-font-bold tw-w-[180px] tw-bg-purple tw-rounded-lg tw-bottom-[20px] tw-left-[110px]" style="border-style: solid; border-width: 2px; border-color: #503480;">
+        FOR IN-HOUSE GAMES
+      </div>
+      <img src="images/pureprofitimage.png" class="tw-absolute tw-z-100  tw-left-[-65px] tw-bottom-[10px]">
+    </div>
+    </div>
+
+
+      <div class="tw-transition tw-ease-in-out tw-duration-500 tw-transform hover:tw-scale-110 tw-relative tw-h-[460px] tw-w-[400px] tw-bg-referalCardBackground" style="border-radius: 20px; box-shadow: 0px 20px 20px -10px black; background: linear-gradient(223deg, #802F84 0%, #360C61 100%); overflow: hidden;">
+        <div style="background-image: url(images/fromwinningsbg.png);height: 100%;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      overflow: hidden">
+
+      <div class="tw-flex tw-flex-col tw-text-center tw-items-center">
+        <div class="tw-relative tw-mt-[70px] tw-mx-auto">
+
+          <div class="">
+            <span class="tw-text-white tw-text-[100px] tw-font-extrabold" style="letter-spacing: -2rem; margin-left: -25px;">1.5<span class="tw-text-white tw-text-7xl tw-font-bold tw-absolute tw-text-center tw-top-[10px] tw-right-[65px]">%</span> </span>
+            <div class="tw-flex tw-flex-col tw-gap-[10px]" >
+              <div class="tw-text-white tw-text-[25px]">From All Winnings</div>
+              <div class="tw-text-yellow tw-text-[16px]">(based on house edge 3,333%)</div>
+              <div class="tw-text-white tw-text-[14px]">1.5% from platform's house edge will be paid you</div>
+              <div class="tw-text-white tw-text-[14px]">immediately after each referrals winning bet</div>
+              
+
+            </div>
+            
+          </div>
+        </div>
+   
+
+          <img src="images/fromallwinningsimage.png" width="100%" class="tw-absolute tw-bottom-[-110px]">
+
+        
+      </div>
+      <div class="tw-absolute tw-z-10 tw-text-[10px] tw-justify-center tw-flex tw-text-yellow tw-h-[35px] tw-text-center tw-items-center tw-font-bold tw-w-[180px] tw-bg-purple tw-rounded-lg tw-bottom-[20px] tw-left-[110px]" style="border-style: solid; border-width: 2px; border-color: #503480;">
+        FOR SLOTS AND SPORTS
+      </div>
+      </div>
+    </div>
+
+
+
+    <div class="tw-rounded-md">
+      <div class="tw-transition tw-ease-in-out tw-duration-500 tw-transform hover:tw-scale-110 tw-relative tw-h-[460px] lg:tw-mt-0 tw-w-[400px]  tw-bg-referalCardBackground" style="border-radius: 20px; box-shadow: 0px 20px 20px -10px black; background: linear-gradient(223deg, #802F84 0%, #360C61 100%);">
+        <div style="background-image: url(images/mined-token-bg.png);height: 100%;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: -2;
+      position: relative;
+      " 
+      >
+      <div class="tw-flex tw-items-center tw-text-center">
+        <div class=" tw-relative tw-mt-[70px] tw-text-left tw-ml-[50px]">
+          <span class="tw-text-white tw-text-[100px] tw-font-extrabold">5 <span class="tw-absolute tw-font-bold tw-text-7xl tw-top-[10px] tw-left-[75px]">%</span></span>
+          <div class="tw-flex tw-flex-col tw-gap-[10px] tw-mt-[1px]">
+            <div class="tw-text-white tw-text-[25px]">From Tokens Mined <br /> By Your Referrals</div>
+            <div class="tw-text-white tw-text-[14px] tw-flex tw-flex-col tw-gap-[10px] tw-mt-[20px]">
+              <div>Available for in-house games only. It</div>
+              <div>means that if you referral has mined</div>
+              <div>100 BFG - you'll receive 5 BFG</div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="tw-absolute tw-z-10 tw-text-base tw-justify-center tw-flex tw-text-yellow tw-h-[35px] tw-text-center tw-items-center tw-font-bold tw-w-[180px] tw-bg-purple tw-rounded-lg tw-bottom-[20px] tw-left-[110px]" style="border-style: solid; border-width: 2px; border-color: #503480;">
+        FOR BFG TOKENS
+      </div>
+        <img src="images/tokens-mined-image.png" width="500px" class="tw-absolute tw-z-100 tw-opacity-85 tw-right-[-70px] tw-bottom-[0px]" style="max-width: 120%; z-index: -1;">
+</div>
+</div>
+</div>
+  </div>
+</div>
+  <div class="tw-transition tw-ease-in-out tw-duration-500 tw-transform hover:tw-scale-110 tw-relative tw-flex tw-items-center tw-mx-auto tw-text-center tw-mb-[80px] tw-w-full sm:tw-w-[600px] md:tw-w-[800px] lg:tw-w-[1300px] xl:tw-w[1400px] tw-w-[500px] tw-h-[800px] sm:tw-h-[450px] tw-mt-[50px] tw-bg-referalCardBackground tw-rounded-[20px]" style="border-radius: 20px; box-shadow: 0px 20px 20px -10px black; background: linear-gradient(223deg, #802F84 0%, #360C61 100%);">
+    <div style="background-image: url(images/exclusive-affiliate-program.png);height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;">
+
+
+
+    <img class="tw-absolute tw-left-[-100px] tw-bottom-0" src="images/exclusiveaffiliateprogramimage.png" alt="">
+ 
+
+    <div class="tw-flex  sm:tw-w-[800px] tw-w-[420px] tw-flex-col tw-break-all tw-gap-[10px] tw-text-left tw-absolute tw-mt-[50px] tw-left-[10%]  sm:tw-left-[10%] md:tw-left-[20%] lg:tw-left-[30%] xl:tw-left-[35%]">
+      <div class="tw-mb-[15px] tw-break-words" >
+
+        <span class="tw-text-white tw-text-[35px] tw-font-bold">
+          
+          Exclusive 
+        </span>
+        <span class="tw-text-yellow tw-text-[35px] tw-font-bold">
+          
+          Affiliate Program
+        </span>
+      </div>
+      <div class="tw-flex tw-flex-col lg:flex-row tw-w-[300px] sm:tw-w-[500px] md:tw-w-[500px] lg:tw-w-[710px]">
+
+        <div class="tw-text-white sm:tw-text-[3xl] tw-text-[16px]" style="line-height: 4rem; font-weight: 300">
+          Are you an influence? Become our partner and profit with RevShare up to 60%. Earn a percentage
+          of the net revenue on the referred players. Get in and let us enjoy success together!
+        </div>
+      </div>
+      <hr/>
+
+      <div class="tw-mt-[30px]">
+       
+          <span class="t tw-text-white tw-text-[35px] tw-font-bold">
+            Special
+          </span>
+          <span class="tw-text-yellow tw-text-[35px] tw-font-bold">
+            Offer
+          </span>
+      
+        <div class="tw-mt-[20px] sm:tw-flex sm:tw-flex-row tw-flex tw-flex-col ">
+          <span class="tw-text-white tw-text-9xl tw-font-extrabold">5<span class="tw-text-white tw-text-9xl tw-font-extrabold tw-ml-[-15px]">0<span class="tw-text-white tw-text-6xl tw-font-bold tw-absolute tw-text-center">%</span> </span> </span>
+          <div class="tw-flex tw-ml-[210px] sm:tw-ml-[150px] tw-items-center">
+            <div class="tw-flex tw-flex-col tw-text-center tw-items-center tw-justify-center" >
+              <div class="tw-mt-[-120px] sm:tw-mt-[0px] tw-text-white sm:tw-text-3xl md:tw-text-4xl tw-text-2xl tw-break-normal ">
+
+                First 2 months from the date of Registration
+              </div>
+              <div class="sm:tw-flex sm:tw-flex-col md:tw-flex-col lg:tw-flex-row tw-flex tw-flex-col  sm:tw-gap-[5px] md:tw-gap-[px] lg:tw-gap-[10px]  tw-gap-[5px]">
+                <div class= "tw-mt-[10px] tw-text-[17px] tw-tracking-widest tw-justify-center tw-align-center tw-flex tw-text-yellow tw-h-[35px] tw-w-[220px] tw-text-center tw-items-center tw-font-bold sm:tw-w-[220px] sm:tw-h-[35px] md:tw-w-[220px] md:tw-h-[35px] lg:tw-w-[220px] lg:tw-h-[42px] xl:tw-w-[220px] xl:tw-h-[42px] 2xl:tw-h-[42px] tw-w-[130px] tw-bg-purple" style="border-style: solid; border-width: 2px; border-color: #503480;border-radius: 10px;">
+                 REFERRAL 50%
+                </div>
+                <div class="tw-mt-[10px]">
+                  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
+                    <span style="width: 220px;">Become a partner</span>
+                </button>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+</div>
+<div class="tw-max-w-full tw-overflow-x-hidden">
+  <footer class="foooter">
+              
+    <!-- Click to scroll top start -->
+    <a title="Scroll Top" class="scrollTop clickScroll" href="body" rel="nofollow"></a>
+    <!-- Click to scroll top end -->
+    
+    <div class="container">
+      
+      <!-- Footer Four column div start -->
+      <div class="fourColumn d-flex justify-content-md-between">
+        <!-- content div start -->
+        <div class="footerCon">
+          <h2>CryptoClub.Casino</h2>                    
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <button class="btn btn-primary btn-square"><span>+18</span></button>
+        </div>
+        <!-- content div start -->
+        
+        <!-- Footer Page menu div start -->
+        <div class="footerMenu">
+          <h4>Page</h4>
+          <ul>                        
+            <li><a href="">Provably Fair</a></li>
+            <li><a href="">Returning Player</a></li>
+            <li><a href="">Daily Login Rewards</a></li>
+            <li><a href="">Terms and Conditions</a></li>
+            <li><a href="">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <!-- Footer menu div end -->
+        
+        <!-- Footer menu div start -->
+        <div class="footerMenu">
+          <h4>Information</h4>
+          <ul>                        
+            <li><a href="">Provably Fair</a></li>
+            <li><a href="">Returning Player</a></li>
+            <li><a href="">Daily Login Rewards</a></li>
+            <li><a href="">Terms and Conditions</a></li>
+            <li><a href="">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <!-- Footer menu div end -->
+        
+        <!-- Footer menu div start -->
+        <div class="footerMenu">
+          <h4>Other Links</h4>
+          <ul>                        
+            <li><a href="">Provably Fair</a></li>
+            <li><a href="">Returning Player</a></li>
+            <li><a href="">Daily Login Rewards</a></li>
+            <li><a href="">Terms and Conditions</a></li>
+            <li><a href="">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <!-- Footer menu div end -->          
+      </div>             
+      <!-- Footer Four column div end -->         
+      
+      
+      <!-- Logo slider div start -->
+      <div class="logoSlider">
+        
+        <div id="logos" class="logosWrapper">
+          <div class="logoImg"><span><img src="images/neosurf.svg" alt=""></span></div>
+          <div class="logoImg"><span><img src="images/inte.svg" alt=""></span></div>
+          <div class="logoImg"><span><img src="images/ecopayz.svg" alt=""></span></div>
+          <div class="logoImg"><span><img src="images/visa.svg" alt=""></span></div>
+          <div class="logoImg"><span><img src="images/netellere.svg" alt=""></span></div>
+          <div class="logoImg"><span><img src="images/skrill.svg" alt=""></span></div>
+          <div class="logoImg"><span><img src="images/mastercard.svg" alt=""></span></div>
+          <div class="logoImg"><span><img src="images/secure.svg" alt=""></span></div>
+          <div class="logoImg"><span><img src="images/mifinity.svg" alt=""></span></div>
+          <div class="logoImg"><span><img src="images/paysafe-card.svg" alt=""></span></div>
+          <div class="logoImg"><span><img src="images/discover.svg" alt=""></span></div>                        
+        </div>
+      </div>
+      <!-- Logo slider div end -->
+      
+      <!-- Licence text div start -->
+      <div class="licensTxt">
+        <h4>Licensing and Regulations</h4>
+        <p>Genesis Global Limited is incorporated under the laws of Malta (C65325) at registered address 28, GB Buildings, Level 3, Watar Street, Ta’ Xbiex, XBX 1301, Malta. Genesis Global Limited is licensed and regulated by the British Gambling Commission with account 45235. Gambling can be harmful; our Responsible Gaming page helps you to stay in control.</p>
+        <p>UNDERAGE GAMBLING IS AN OFFENCE.</p>
+      </div>
+      <!-- Licence text div end -->
+      
+      <!-- Gambling logos div start -->
+      <div class="gambLing d-lg-flex justify-content-lg-between">
+        <img src="images/gambling-commission.svg" alt="" />
+        <img src="images/gam-stop.svg" alt="" />
+        <img src="images/begamble-aware.svg" alt="" />
+        <img src="images/responsible-gaming-foundation-malta.svg" alt="" />
+        <img src="images/mga.svg" alt="" />
+        <img src="images/genesis.svg" alt="" />                    
+      </div>
+      <!-- Gambling logos div end -->
+      
+      <!-- Copyright div start -->
+      <div class="copyRight">
+        
+        <span class="copyTxt">&copy; 2022 All Rights Reserved</span>
+        
+        <!-- Select language start -->
+        <div class="selctLanguage">
+          <button class="langWrapper selectedLang dropdown-toggle" type="button" id="languageBtn" data-bs-toggle="dropdown" aria-expanded="false">                            
+            <i class="flag-usa"></i>
+            <span>English</span>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="languageBtn">
+            <li><a href="" class="langWrapper"><i class="flag-usa"></i><span>English</span></a></li>
+            <li><a href="" class="langWrapper"><i class="flag-deutch"></i><span>Deutch</span></a></li>
+            <li><a href="" class="langWrapper"><i class="flag-espan"></i><span>Española</span></a></li>
+          </ul>                                       
+        </div>                     
+        <!-- Select language end -->                       
+      </div>
+      <!-- Copyright div end -->
+      
+      
+    </div>
+  </footer>
+
+</div>
+  </body>
+</html>

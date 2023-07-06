@@ -1,0 +1,20 @@
+@font-face {
+    font-family:'museo slab org';
+    src: url('/theme/css/font/MuseoSlab500.eot'); /* IE9 Compat Modes */
+  	src: url('/theme/css/font/MuseoSlab500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('/theme/css/font/MuseoSlab500.woff2') format('woff2'), /* Modern Browsers */
+    url('/theme/css/font/MuseoSlab500.woff') format('woff'), /* Modern Browsers */
+    url('/theme/css/font/MuseoSlab500.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('/theme/css/font/MuseoSlab500.svg') format('svg'); /* Legacy iOS */  
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+
+}
+
+.nav-tabs > li > a{
+    line-height:1.22857143 !important;
+}
+body, #myaccountDiv,p,h1,span,h2,h3,h4,h5,h6, #myaccountDiv a, .sweet-alert, .sweet-alert p, .colorbox, .casmodal-header,.modal-body,.btn{
+    font-family: "museo slab org", 'Helvetica', sans-serif !important;
+}

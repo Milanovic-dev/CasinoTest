@@ -1,0 +1,18 @@
+/*LOAD FONTS*/
+@font-face {
+    font-family: "Acumin";
+    src: url("/theme/css/font/Acumin-RPro.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Acumin";
+    src: url("/theme/css/font/Acumin-BdPro.otf") format("opentype");
+    font-weight: 700;
+}
+
+.nav-tabs > li > a{
+    line-height:1.22857143 !important;
+}
+body, #myaccountDiv,p,h1,span,h2,h3,h4,h5,h6, #myaccountDiv a, .sweet-alert, .sweet-alert p, .colorbox, .casmodal-header,.modal-body,.btn{
+    font-family: "Acumin", 'Helvetica', sans-serif !important;
+}

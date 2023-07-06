@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url('https://fonts.cdnfonts.com/css/avenir');
+    </style>
+
+    <script>
+      tailwind.config = {
+        prefix: "tw-",
+        corePlugins: {
+          preflight: false,
+        },
+        theme: {
+          extend: {
+            colors: {
+              purple: "#352256",
+              lightPurple: "#503480",
+              secondLightPurple: "#32234B",
+              darkPurple: "#26173F",
+              white: "#FFFFFF",
+              yellow: "#FFDE01",
+              subtitleGray: "#BAACD2AD",
+              darkPink: "#C51DF1",
+              lightGreen: "#1DFF85",
+              lightPink: '#15324159'
+            },
+            fontFamily: {
+              "avenir": ['"Avenir"', 'sans-sefir']
+            }
+          },
+        },
+      };
+    </script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="relative">
+      <header class="header" style="position: relative">
+        <div class="container d-flex justify-content-between">
+          <!-- Left logo & Menu button div start -->
+          <div class="logoDiv d-flex align-items-center">
+            <button class="menuIcon">
+              <span></span>
+              <span class="line2"></span>
+              <span class="line3"></span>
+            </button>
+
+            <div class="logo">
+              <a href="">CryptoClub.Casino</a>
+            </div>
+          </div>
+          <!-- Left logo & Menu button div end -->
+
+          <!-- Search div start -->
+          <div class="searchDiv">
+            <form action="">
+              <input type="search" class="form-control" placeholder="Search" />
+              <button class="serachBtn"></button>
+            </form>
+          </div>
+          <!-- Search div end -->
+
+          <!-- Butotns div start -->
+          <div class="buttonsDiv">
+            <button
+              class="btn btn-secondary"
+              data-bs-toggle="modal"
+              data-bs-target="#loginModal"
+            >
+              <span>log in</span>
+            </button>
+            <button
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#registerModal"
+            >
+              <span>sign up</span>
+            </button>
+          </div>
+          <!-- Butotns div end -->
+        </div>
+      </header>
+
+      <!-- <div class="inset-0 absolute"></div> -->
+      <div
+      class="tw-bg-[url('images/banner-bg-777.png')] tw-h-[50vh] sm:tw-h-[80vh] md:tw-h-[80vh] lg:tw-h-screen tw-w-full tw-bg-no-repeat tw-bg-cover "
+      >
+      <!-- <img src="images/banner-bg-777.png" class="tw-h-screen tw-w-full tw-bg-no-repeat tw-bg-cover" > -->
+        <div class="tw-flex">
+          <div class="tw-w-1/2"></div>
+            <div class="tw-w-1/2 tw-text-left tw-mt-[150px] tw-flex tw-justify-center tw-items-center tw-flex-col">
+              <div class="tw-text-left tw-justify-left tw-content-left ">
+
+                <div class="tw-text-4xl tw-text-white tw-text- tw-mb-4">
+                  Gain A Lot Of Benefits
+                </div>
+                <span class="lg:tw-text-9xl md:tw-text-9xl sm:tw-text-6xl tw-text-4xl tw-text-white tw-text-left tw-font-bold">With Our <span class=" md:tw-text-9xl sm:tw-text-6xl tw-text-4xl tw-text-yellow tw-text-left tw-font-bold"> Vip </span> </span>
+                
+                <div class="md:tw-text-9xl sm:tw-text-6xl tw-text-4xl tw-text-yellow tw-text-left tw-font-bold"> System</div>
+                <div class="tw-text-[21px] tw-mb-8 tw-mt-8 tw-text-white">Forem ipsum dolor sit amet, consectetur</div>
+                <div class="tw-text-[21px] tw-mb-8 tw-text-white">adipiscing elit. Etiam eu turpis molestie,</div>
+                <div class="tw-text-[21px] tw-mb-8 tw-text-white">dictum est.</div>
+                
+
+                  <button
+                  class="btn btn-secondary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#loginModal"
+                  >
+
+                    <span style="width: 200px;">MORE</span>
+                  </button>
+              </div>
+            </div>
+
+            </div>
+          </div>
+ 
+        </div>
+        <div class="tw-grid tw-grid-cols-1 sm:tw-grid-cols-1 md:tw-grid-cols-2  lg:tw-grid-cols-2 xl:tw-grid-cols-4 xl:tw-gap-[300px] tw-2xl:grid-cols-4 tw-mx-auto tw-max-w-7xl md:tw-gap-[300px] tw-gap-[50px] sm:tw-gap-[50px] md:tw-gap-[50px]  tw-mt-[-40px] tw-justify-items-center tw-place-items-center">
+          <div class="tw-flex tw-flex-col tw-justify-center tw-rounded-lg tw-w-[285px] tw-h-[200px] tw-bg-lightPurple tw-justify-items-center tw-place-items-center ">
+            <img class="tw-w-[92px] tw-mb-[10px] tw-h-[72p]   tw-transition tw-ease-in-out tw-duration-500 tw-transform hover:tw-scale-110   "  src="images/levels&rewards.png">
+            <div class="tw-text-white tw-text-[16px]">Leves & Rewards</div>
+            <div class="tw-text-subtitleGray tw-text-[16px]">Play more -> Gain more</div>
+          </div>
+          <div class="tw-flex tw-flex-col tw-justify-center tw-rounded-lg tw-w-[285px] tw-h-[200px] tw-bg-lightPurple tw-justify-items-center tw-place-items-center">
+            <img class="tw-w-[139px] tw-mb-[10px] tw-mt-[-40px] tw-h-[139px]   tw-transition tw-ease-in-out tw-duration-500 tw-transform hover:tw-scale-110  " src="images/increased-cashback.png">
+            <div class="tw-text-white tw-text-[16px] tw-mt-[-30px]">Increased Cashback</div>
+            <div class="tw-text-subtitleGray tw-text-[16px]">Receive up to 25% of your losses back</div>
+          </div>
+          <div class="tw-flex tw-flex-col tw-justify-center  tw-rounded-lg tw-w-[285px] tw-h-[200px] tw-bg-lightPurple tw-justify-items-center tw-place-items-center">
+            <img class="tw-w-[106px] tw-mb-[10px] tw-h-[64px] tw-transition tw-ease-in-out tw-duration-500 tw-transform hover:tw-scale-110 " src="images/Exclusive-Promotions 1.png">
+            <div class="tw-text-white tw-text-[16px]">Exclusive Promotions</div>
+            <div class="tw-text-subtitleGray tw-text-[16px]">Unlock exclusive benefits</div>
+          </div>
+          <div class="tw-flex tw-flex-col tw-justify-center tw-rounded-lg tw-w-[285px] tw-h-[200px] tw-bg-lightPurple tw-justify-items-center tw-place-items-center">
+            <img class="tw-w-[92px] tw-mb-[10px] tw-h-[64px] tw-transition tw-ease-in-out tw-duration-500 tw-transform hover:tw-scale-110 " src="images/vip-premium-1.png">
+            <div class="tw-text-white tw-text-[16px]">VIP Premium Club</div>
+            <div class="tw-text-subtitleGray tw-text-[16px]">Become a part of select group</div>
+          </div>
+        </div>
+        <span class="tw-mt-32 tw-font-bold tw-flex tw-text-6xl tw-text-white tw-text-center tw-justify-center tw-items-center">
+          How to <span class="tw-ml-2 tw-font-bold tw-flex tw-text-[50px] tw-text-yellow tw-text-center tw-justify-center tw-items-center">
+            Participate
+          </span>
+        </span>
+        <div class="tw-mt-8 tw-mb-2 tw-text-center tw-text-subtitleGray tw-text-[16px]">You start your way to the top tier, from the first Level: FRIEND. The more you play – the higher your </div>
+        <div class="tw-text-center tw-mb-2 tw-text-subtitleGray tw-text-[16px]"> Level becomes. Your level is calculated in real time based on how much you wager. Every time when</div>
+        <div class="tw-text-center tw-mb-2 tw-text-subtitleGray tw-text-[16px]"> you wager, you get Rank Points which contribute to determining your Level.</div>
+
+
+        <!-- OVO JE ZA LG I XL  -->
+        <div class="md:tw-hidden sm:tw-hidden tw-hidden lg:tw-flex xl:tw-flex 2xl:tw-flex tw-mx-[110px] tw-mt-[20px] tw-max-w-[1100px] tw-ml-auto tw-mr-auto tw-items-right tw-text-center">
+          <div class="tw-w-2/5 tw-text-left ">
+            <div>
+              <img src="images/lock-crown.png" class="tw-transition tw-ease-in-out tw-duration-500 tw-transform hover:tw-scale-110">
+            </div>
+            <div class="tw-flex tw-flex-col tw-items-left tw-m-auto tw-text-left tw-w-fit tw-mr-0">
+              <div class="tw-text-left  tw-text-white tw-mt-[120px] tw-mb-[8px] tw-text-[26px] tw-font-bold">
+                Play games
+              </div>
+              <div class="tw-text-left tw-text-subtitleGray tw-mb-[8px] tw-text-[16px] ">
+                Get the best gaming experience and
+              </div>
+              <div class="tw-text-left tw-text-subtitleGray tw-text-[16px]">
+                get rewarded when playing!
+              </div>
+            </div>
+            <div>
+
+              <img class="tw-mt-[90px] tw-w-[500px] tw-transition tw-ease-in-out tw-duration-500 tw-transform hover:tw-scale-110 " src="images/mobile-gifts.png">
+            </div>
+          </div>
+          <div class="tw-w-1/5 ">
+            <img src="images/one.png" class="tw-w-[99px] tw-mt-[120px] tw-items-center">
+            <div class="tw-m-auto tw-mt-[8px] tw-bg-lightPurple tw-w-[5px] tw-h-[20px] tw-text-center tw-items-center"></div>
+            <div class="tw-m-auto tw-mt-[8px] tw-bg-lightPurple tw-w-[5px] tw-h-[20px] tw-text-center tw-items-center"></div>
+            <div class="tw-m-auto tw-mt-[8px] tw-bg-lightPurple tw-w-[5px] tw-h-[20px] tw-text-center tw-items-center"></div>
+            <div class="tw-m-auto tw-mt-[8px] tw-bg-lightPurple tw-w-[5px] tw-h-[20px] tw-text-center tw-items-center"></div>
+            <div class="tw-m-auto tw-mt-[8px] tw-bg-lightPurple tw-w-[5px] tw-h-[20px] tw-text-center tw-items-center"></div>
+            <div class="tw-m-auto tw-mt-[8px] tw-bg-lightPurple tw-w-[5px] tw-h-[20px] tw-text-center tw-items-center"></div>
+            <div class="tw-m-auto tw-mt-[8px] tw-bg-lightPurple tw-w-[5px] tw-h-[20px] tw-text-center tw-items-center"></div>
+            <div class="tw-m-auto tw-mt-[8px] tw-bg-lightPurple tw-w-[5px] tw-h-[20px] tw-text-center tw-items-center"></div>
+            <div class="tw-m-auto tw-mt-[8px] tw-bg-lightPurple tw-w-[5px] tw-h-[20px] tw-text-center tw-items-center"></div>
+            <img src="images/two.png" class="tw-w-[99px] tw-items-center">
+            <div class="tw-m-auto tw-mt-[8px] tw-bg-lightPurple tw-w-[5px] tw-h-[20px] tw-text-center tw-items-center"></div>
+            <div class="tw-m-auto tw-mt-[8px] tw-bg-lightPurple tw-w-[5px] tw-h-[20px] tw-text-center tw-items-center"></div>
+            <div class="tw-m-auto tw-mt-[8px] tw-bg-lightPurple tw-w-[5px] tw-h-[20px] tw-text-center tw-items-center"></div>
+            <div class="tw-m-auto tw-mt-[8px] tw-bg-lightPurple tw-w-[5px] tw-h-[20px] tw-text-center tw-items-center"></div>
+            <div class="tw-m-auto tw-mt-[8px] tw-bg-lightPurple tw-w-[5px] tw-h-[20px] tw-text-center tw-items-center"></div>
+            <div class="tw-m-auto tw-mt-[8px] tw-bg-lightPurple tw-w-[5px] tw-h-[20px] tw-text-center tw-items-center"></div>
+            <div class="tw-m-auto tw-mt-[8px] tw-bg-lightPurple tw-w-[5px] tw-h-[20px] tw-text-center tw-items-center"></div>
+            <div class="tw-m-auto tw-mt-[8px] tw-bg-lightPurple tw-w-[5px] tw-h-[20px] tw-text-center tw-items-center"></div>
+            <div class="tw-m-auto tw-mt-[8px] tw-bg-lightPurple tw-w-[5px] tw-h-[20px] tw-text-center tw-items-center"></div>
+            <img src="images/three.png" class="tw-w-[99px] tw-items-center">
+          </div>
+          <div class="tw-w-2/5">
+            <div class="tw-text-white tw-mt-[120px] tw-mb-[8px] tw-text-[26px] tw-font-bold tw-text-left">
+              Log in 
+            </div>
+            <div class="tw-text-subtitleGray tw-mb-[8px] tw-text-[16px] tw-text-left">
+              Create an account in just a few seconds!
+            </div>
+            <div class="tw-items-left tw-flex">
+
+              <button
+              class="btn btn-secondary"
+              data-bs-toggle="modal"
+              data-bs-target="#loginModal"
+              >
+              <span >log in</span>
+            </div>
+          </button>
+            <img src="images/mobile-controller.png" class="tw-w-[500px]  tw-mt-[110px] tw-flex tw-transition tw-ease-in-out tw-duration-500 tw-transform hover:tw-scale-110 " alt="">
+            <div class="tw-text-white tw-mt-[120px] tw-flex tw-mb-[8px] tw-text-[26px] tw-text-left tw-font-bold">
+             Increase Level
+            </div>
+            <div class="tw-text-subtitleGray tw-mb-[8px] tw-text-[16px] tw-text-left">
+              Gain more levels as you play! Each level
+            </div>
+            <div class="tw-text-subtitleGray tw-text-[16px] tw-text-left">
+              comes with its own unique rewards!
+            </div>
+          </div>
+        </div>
+        <!-- OVDE SATA IDE ZA MOBILE -->
+
+        <div class="lg:tw-hidden xl:tw-hidden 2xl:tw-hidden sm:tw-flex md:tw-flex tw-flex tw-mt-[20px] tw-items-right tw-text-center">
+
+          <div class="tw-w-1/5">
+            <img src="images/one.png" class="tw-w-[99px] tw-mt-[120px] tw-items-center">
+            <div class="tw-m-auto tw-mt-[8px] tw-bg-lightPurple tw-w-[5px] tw-h-[20px] tw-text-center tw-items-center"></div>
+            <div class="tw-m-auto tw-mt-[8px] tw-bg-lightPurple tw-w-[5px] tw-h-[20px] tw-text-center tw-items-center"></div>
+            <div class="tw-m-auto tw-mt-[8px] tw-bg-lightPurple tw-w-[5px] tw-h-[20px] tw-text-center tw-items-center"></div>
+            <div class="tw-m-auto tw-mt-[8px] tw-bg-lightPurple tw-w-[5px] tw-h-[20px] tw-text-center tw-items-center"></div>
+            <div class="tw-m-auto tw-mt-[8px] tw-bg-lightPurple tw-w-[5px] tw-h-[20px] tw-text-center tw-items-center"></div>
+            <div class="tw-m-auto tw-mt-[8px] tw-bg-lightPurple tw-w-[5px] tw-h-[20px] tw-text-center tw-items-center"></div>
+            <div class="tw-m-auto tw-mt-[8px] tw-bg-lightPurple tw-w-[5px] tw-h-[20px] tw-text-center tw-items-center"></div>
+            <div class="tw-m-auto tw-mt-[8px] tw-bg-lightPurple tw-w-[5px] tw-h-[20px] tw-text-center tw-items-center"></div>
+            <div class="tw-m-auto tw-mt-[8px] tw-bg-lightPurple tw-w-[5px] tw-h-[20px] tw-text-center tw-items-center"></div>
+            <img src="images/two.png" class="tw-w-[99px] tw-items-center">
+            <div class="tw-m-auto tw-mt-[8px] tw-bg-lightPurple tw-w-[5px] tw-h-[20px] tw-text-center tw-items-center"></div>
+            <div class="tw-m-auto tw-mt-[8px] tw-bg-lightPurple tw-w-[5px] tw-h-[20px] tw-text-center tw-items-center"></div>
+            <div class="tw-m-auto tw-mt-[8px] tw-bg-lightPurple tw-w-[5px] tw-h-[20px] tw-text-center tw-items-center"></div>
+            <div class="tw-m-auto tw-mt-[8px] tw-bg-lightPurple tw-w-[5px] tw-h-[20px] tw-text-center tw-items-center"></div>
+            <div class="tw-m-auto tw-mt-[8px] tw-bg-lightPurple tw-w-[5px] tw-h-[20px] tw-text-center tw-items-center"></div>
+            <div class="tw-m-auto tw-mt-[8px] tw-bg-lightPurple tw-w-[5px] tw-h-[20px] tw-text-center tw-items-center"></div>
+            <div class="tw-m-auto tw-mt-[8px] tw-bg-lightPurple tw-w-[5px] tw-h-[20px] tw-text-center tw-items-center"></div>
+            <div class="tw-m-auto tw-mt-[8px] tw-bg-lightPurple tw-w-[5px] tw-h-[20px] tw-text-center tw-items-center"></div>
+            <div class="tw-m-auto tw-mt-[8px] tw-bg-lightPurple tw-w-[5px] tw-h-[20px] tw-text-center tw-items-center"></div>
+            <img src="images/three.png" class="tw-w-[99px] tw-items-center">
+          </div>
+          <div class="tw-w-2/5 tw-text-left tw-flex tw-flex-col tw-justify-between">
+            <div class="sm:tw-mt-[30px] md:tw-mt-[30px] lg:tw-mt- tw-mt-[80px]" >
+              <img src="images/lock-crown.png">
+            </div>
+            <div>
+              <img src="images/mobile-controller.png">
+            </div>
+            <div class="sm:tw-mb-[-20px] tw-mb-[-20px]" >
+              <img src="images/mobile-gifts.png" >
+            </div>
+          </div>
+          <div class="tw-w-2/5 tw-justify-between tw-flex tw-flex-col">
+            <div>
+              <div class="tw-text-white tw-mt-[120px] tw-mb-[8px] tw-text-4xl tw-text-left">
+                Log in 
+              </div>
+              <div class="tw-text-subtitleGray tw-mb-[8px] tw-text-base tw-text-left">
+                Create an account in just a few seconds!
+              </div>
+              <div class="tw-items-left tw-flex">
+                
+                <button
+                class="btn btn-secondary"
+                data-bs-toggle="modal"
+                data-bs-target="#loginModal"
+                >
+                <span>log in</span>
+              </button>
+            </div>
+          </div>
+          
+          <div>
+
+            <div class="tw-text-left  tw-text-white tw-mt-[120px] tw-mb-[8px] tw-text-4xl ">
+              Play games
+            </div>
+            <div class="tw-text-left tw-text-subtitleGray tw-mb-[8px] tw-text-base ">
+              Get the best gaming experience and
+            </div>
+            <div class="tw-text-left tw-text-subtitleGray tw-text-base">
+              get rewarded when playing!
+            </div>
+          </div>
+          <div>
+
+            <!-- <img src="images/mobile-controller.png" class="tw-w-[500px] tw-h-[440px] tw-mt-[110px] tw-flex" alt=""> -->
+            <div class="tw-text-white tw-mt-[150px] tw-flex tw-mb-[8px] tw-text-4xl tw-text-left">
+              Increase Level
+            </div>
+            <div class="tw-text-subtitleGray tw-mb-[8px] tw-text-base tw-text-left">
+              Gain more levels as you play! Each level
+            </div>
+            <div class="tw-text-subtitleGray tw-text-base tw-text-left">
+              comes with its own unique rewards!
+            </div>
+          </div>
+          </div>
+        </div>
+
+
+
+        <!-- OVDE SE ZAVRSAVA MOBILE -->
+
+        <div >
+          <span class=" tw-mt-[100px] tw-font-bold tw-flex tw-text-[50px] tw-text-yellow tw-text-center tw-justify-center tw-items-center">
+            20 <span class="tw-ml-2 tw-font-bold tw-flex tw-text-[50px] tw-text-white tw-text-center tw-justify-center tw-items-center">
+              Levels For You!
+            </span>
+          </span>
+          <div class="md:test ">
+
+          </div>
+          <div class="tw-mt-8 tw-mb-2 tw-text-center tw-text-subtitleGray tw-text-[16px]">React the highest Level -> King to get a 25% cashback bonus and open all the benefits of the </div>
+          <div class="tw-text-center tw-mb-2 tw-text-subtitleGray tw-text-[16px]">platform. We will offer you the best gaming experience and excellent service!</div>
+
+
+         
+
+
+          <div  style="background-image: url(images/20-levels-for-you.png);height: 100vh;
+          width: 100%;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          ">
+              
+          </div>
+
+        </div>
+        <div
+          <div class="tw-bg-[url('images/vip-premium-club.png')] tw-w-full tw-bg-no-repeat tw-bg-bottom tw-bg-cover  tw-mt-[100px]">
+
+              <div class="tw-flex tw-flex-col tw-justify-center tw-items-center md:tw-mt-[100px] sm:tw-mt-[200px] lg:tw-mt-[0px] xl:tw-mt-[0px] tw-mt-[250px]">
+         
+                  <span class=" tw-font-bold tw-flex tw-flex-col sm:tw-flex sm:tw-flex-row tw-text-[50px] tw-text-yellow tw-text-center tw-justify-center tw-items-center tw-mt-[300px]">
+                    Vip <span class="tw-ml-2 tw-font-bold tw-flex tw-text-[50px] tw-text-white tw-text-center tw-justify-center tw-items-center">
+                      Premium Club
+                    </span>
+                  </span>
+        
+                <div class="tw-mt-8 tw-mb-2 tw-text-center tw-text-subtitleGray tw-text-[16px]"> Top Rank - King has 25% Cashback Bonus and the best benefits. Stay with us to receive the best</div>
+                <div class="tw-text-center tw-mb-2 tw-text-subtitleGray tw-text-[16px]"> gaming experience and highest level of service!</div>
+                <div class="tw-text-center tw-mb-2 tw-text-white tw-mt-[50px] tw-font-bold tw-text-[26px]"> Benefits For Being A Member:</div>
+
+                <div class="tw-grid tw-mt-[30px]  tw-grid-cols-1 sm:tw-grid-cols-2 md:tw-grid-cols-3 lg:tw-grid-cols-4 xl:tw-grid-cols-5 2xl:tw-grid-cols-5 tw-mx-auto tw-max-w-[1400px] tw-gap-[20px] tw-mt-[-40px] tw-justify-items-center tw-place-items-center">
+                  <div class="tw-flex tw-flex-col tw-justify-center tw-rounded-lg tw-w-[224px] tw-h-[202px] tw-bg-lightPurple tw-justify-items-center tw-place-items-center">
+                    <div class="tw-flex tw-justify-center tw-items-center tw-w-[100px] tw-h-[80px] tw-mb-[10px] tw-bg-purple tw-rounded-lg tw-transition tw-ease-in-out tw-duration-500 tw-transform hover:tw-scale-110 ">
+                      <img src="images/personal-vip-manager.png" class="tw-w-[37px] tw-h-[38px] ">
+                    </div>
+                    <div class="tw-text-white tw-text-[16px]">Personal VIP</div>
+                    <div class="tw-text-white tw-text-[16px]">Manager</div>
+                  </div>
+
+                  <div class=" tw-flex tw-flex-col tw-justify-center tw-rounded-lg tw-w-[224px] tw-h-[202px] tw-bg-lightPurple tw-justify-items-center tw-place-items-center">
+                    <div class="tw-flex tw-justify-center tw-items-center tw-w-[100px] tw-h-[80px] tw-mb-[10px] tw-bg-purple tw-rounded-lg tw-transition tw-ease-in-out tw-duration-500 tw-transform hover:tw-scale-110 ">
+                      <img src="images/Insights.png" class="tw-w-[39px] tw-h-[39px] ">
+                    </div>
+                    <div class="tw-text-white tw-text-[16px]">Insights</div>
+
+                  </div>
+
+                  <div class=" tw-flex tw-flex-col tw-justify-center  tw-rounded-lg tw-w-[224px] tw-h-[202px] tw-bg-lightPurple tw-justify-items-center tw-place-items-center">
+                    <div class="tw-flex tw-justify-center tw-items-center tw-w-[100px] tw-h-[80px] tw-mb-[10px] tw-bg-purple tw-rounded-lg tw-transition tw-ease-in-out tw-duration-500 tw-transform hover:tw-scale-110 ">
+                      <img src="images/Higher-cashback-rewards.png" class="tw-w-[33px] tw-h-[35px]  ">
+                    </div>
+                    <div class="tw-text-white tw-text-[16px]">Higher Cashback</div>
+                    <div class="tw-text-white tw-text-[16px]">Rewards</div>
+                  </div>
+
+                  <div class=" tw-flex tw-flex-col tw-justify-center  tw-rounded-lg tw-w-[224px] tw-h-[202px] tw-bg-lightPurple tw-justify-items-center tw-place-items-center">
+                    <div class="tw-flex tw-justify-center tw-items-center tw-w-[100px] tw-h-[80px] tw-mb-[10px] tw-bg-purple tw-rounded-lg tw-transition tw-ease-in-out tw-duration-500 tw-transform hover:tw-scale-110 ">
+                      <img src="images/weekly-bonuses.png" class="tw-w-[38px] tw-h-[41px]  ">
+                    </div>
+                    <div class="tw-text-white tw-text-[16px]">Weekly</div>
+                    <div class="tw-text-white tw-text-[16px]">Bonuses</div>
+                  </div>
+
+                  <div class=" tw-flex tw-flex-col tw-justify-center tw-rounded-lg tw-w-[224px] tw-h-[202px] tw-bg-lightPurple tw-justify-items-center tw-place-items-center">
+                    <div class="tw-flex tw-justify-center tw-items-center tw-w-[100px] tw-h-[80px] tw-mb-[10px] tw-bg-purple tw-rounded-lg tw-transition tw-ease-in-out tw-duration-500 tw-transform hover:tw-scale-110 ">
+                      <img src="images/other-additional-perks.png" class="tw-w-[41px] tw-h-[38px] ">
+                    </div>
+                    <div class="tw-text-white tw-text-[16px]">Other Additional</div>
+                    <div class="tw-text-white tw-text-[16px]">Perks</div>
+                  </div>
+
+                </div>
+                <div class="tw-mt-[30px] tw-items-center tw-justify-center tw-flex tw-mb-[400px]">
+                  <button
+                  class="btn btn-secondary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#loginModal"
+                >
+                  <span style="font-size: 14px; font-weight: bold; width: 224px; height: 50px;">vip telegram group</span>
+                </button>
+
+                </div>
+              </div>
+
+            </div>
+
+            <div class="tw-max-w-full tw-overflow-x-hidden">
+        
+            <footer class="foooter">
+              
+              <!-- Click to scroll top start -->
+              <a title="Scroll Top" class="scrollTop clickScroll" href="body" rel="nofollow"></a>
+              <!-- Click to scroll top end -->
+              
+              <div class="container">
+                
+                <!-- Footer Four column div start -->
+                <div class="fourColumn d-flex justify-content-md-between">
+                  <!-- content div start -->
+                  <div class="footerCon">
+                    <h2>CryptoClub.Casino</h2>                    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <button class="btn btn-primary btn-square"><span>+18</span></button>
+                  </div>
+                  <!-- content div start -->
+                  
+                  <!-- Footer Page menu div start -->
+                  <div class="footerMenu">
+                    <h4>Page</h4>
+                    <ul>                        
+                      <li><a href="">Provably Fair</a></li>
+                      <li><a href="">Returning Player</a></li>
+                      <li><a href="">Daily Login Rewards</a></li>
+                      <li><a href="">Terms and Conditions</a></li>
+                      <li><a href="">Privacy Policy</a></li>
+                    </ul>
+                  </div>
+                  <!-- Footer menu div end -->
+                  
+                  <!-- Footer menu div start -->
+                  <div class="footerMenu">
+                    <h4>Information</h4>
+                    <ul>                        
+                      <li><a href="">Provably Fair</a></li>
+                      <li><a href="">Returning Player</a></li>
+                      <li><a href="">Daily Login Rewards</a></li>
+                      <li><a href="">Terms and Conditions</a></li>
+                      <li><a href="">Privacy Policy</a></li>
+                    </ul>
+                  </div>
+                  <!-- Footer menu div end -->
+                  
+                  <!-- Footer menu div start -->
+                  <div class="footerMenu">
+                    <h4>Other Links</h4>
+                    <ul>                        
+                      <li><a href="">Provably Fair</a></li>
+                      <li><a href="">Returning Player</a></li>
+                      <li><a href="">Daily Login Rewards</a></li>
+                      <li><a href="">Terms and Conditions</a></li>
+                      <li><a href="">Privacy Policy</a></li>
+                    </ul>
+                  </div>
+                  <!-- Footer menu div end -->          
+                </div>             
+                <!-- Footer Four column div end -->         
+                
+                
+                <!-- Logo slider div start -->
+                <div class="logoSlider">
+                  
+                  <div id="logos" class="logosWrapper">
+                    <div class="logoImg"><span><img src="images/neosurf.svg" alt=""></span></div>
+                    <div class="logoImg"><span><img src="images/inte.svg" alt=""></span></div>
+                    <div class="logoImg"><span><img src="images/ecopayz.svg" alt=""></span></div>
+                    <div class="logoImg"><span><img src="images/visa.svg" alt=""></span></div>
+                    <div class="logoImg"><span><img src="images/netellere.svg" alt=""></span></div>
+                    <div class="logoImg"><span><img src="images/skrill.svg" alt=""></span></div>
+                    <div class="logoImg"><span><img src="images/mastercard.svg" alt=""></span></div>
+                    <div class="logoImg"><span><img src="images/secure.svg" alt=""></span></div>
+                    <div class="logoImg"><span><img src="images/mifinity.svg" alt=""></span></div>
+                    <div class="logoImg"><span><img src="images/paysafe-card.svg" alt=""></span></div>
+                    <div class="logoImg"><span><img src="images/discover.svg" alt=""></span></div>                        
+                  </div>
+                </div>
+                <!-- Logo slider div end -->
+                
+                <!-- Licence text div start -->
+                <div class="licensTxt">
+                  <h4>Licensing and Regulations</h4>
+                  <p>Genesis Global Limited is incorporated under the laws of Malta (C65325) at registered address 28, GB Buildings, Level 3, Watar Street, Ta’ Xbiex, XBX 1301, Malta. Genesis Global Limited is licensed and regulated by the British Gambling Commission with account 45235. Gambling can be harmful; our Responsible Gaming page helps you to stay in control.</p>
+                  <p>UNDERAGE GAMBLING IS AN OFFENCE.</p>
+                </div>
+                <!-- Licence text div end -->
+                
+                <!-- Gambling logos div start -->
+                <div class="gambLing d-lg-flex justify-content-lg-between">
+                  <img src="images/gambling-commission.svg" alt="" />
+                  <img src="images/gam-stop.svg" alt="" />
+                  <img src="images/begamble-aware.svg" alt="" />
+                  <img src="images/responsible-gaming-foundation-malta.svg" alt="" />
+                  <img src="images/mga.svg" alt="" />
+                  <img src="images/genesis.svg" alt="" />                    
+                </div>
+                <!-- Gambling logos div end -->
+                
+                <!-- Copyright div start -->
+                <div class="copyRight">
+                  
+                  <span class="copyTxt">&copy; 2022 All Rights Reserved</span>
+                  
+                  <!-- Select language start -->
+                  <div class="selctLanguage">
+                    <button class="langWrapper selectedLang dropdown-toggle" type="button" id="languageBtn" data-bs-toggle="dropdown" aria-expanded="false">                            
+                      <i class="flag-usa"></i>
+                      <span>English</span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="languageBtn">
+                      <li><a href="" class="langWrapper"><i class="flag-usa"></i><span>English</span></a></li>
+                      <li><a href="" class="langWrapper"><i class="flag-deutch"></i><span>Deutch</span></a></li>
+                      <li><a href="" class="langWrapper"><i class="flag-espan"></i><span>Española</span></a></li>
+                    </ul>                                       
+                  </div>                     
+                  <!-- Select language end -->                       
+                </div>
+                <!-- Copyright div end -->
+                
+                
+              </div>
+            </footer>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

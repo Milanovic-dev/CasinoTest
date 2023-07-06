@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title></title>
+
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />    
+
+  </head>
+  <body>
+	<div class="wrapper">
+
+        <!-- Toggle sidebar start -->
+        <aside class="leftSidebar mCustomScrollbar">
+
+            <!-- Sidebar top part start-->
+            <div class="sideTop">
+                <div class="logo">
+                    <button class="closeBtn"></button>
+                    <a href="">CryptoClub.Casino</a>
+                </div>            
+                <a href="" class="btn btn-secondary btn-block">
+                    <span class="doubleBorder">log in</span>
+                </a>            
+            </div>    
+            <!-- Sidebar top part end-->    
+
+            <!-- Navigation start -->
+            <nav class="navMenu">
+                <ul>
+                    <li><a href="" class="active"><i class="iconHome"></i><span>Home</span></a></li>
+                    <li><a href=""><i class="iconGames"></i><span>Games</span></a></li>
+                    <li><a href=""><i class="iconPromo"></i><span>Promotions</span></a></li>
+                </ul>
+            </nav>
+            <!-- Navigation end -->
+
+            <!-- Live chat language div start -->
+            <div class="langChat">
+                <ul>
+                    <li class="liveChat">
+                        <a href=""><i></i><span>Live Chat</span></a>
+                    </li>
+                    <li>
+                        <!-- Select language start -->
+                        <div class="selctLanguage">
+                            <button class="langWrapper selectedLang dropdown-toggle" type="button" id="languageBtn" data-bs-toggle="dropdown" aria-expanded="false">                            
+                                <i class="flag-usa"></i>
+                                <span>English</span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="languageBtn">
+                                <li><a href="" class="langWrapper"><i class="flag-usa"></i><span>English</span></a></li>
+                                <li><a href="" class="langWrapper"><i class="flag-deutch"></i><span>Deutch</span></a></li>
+                                <li><a href="" class="langWrapper"><i class="flag-espan"></i><span>Española</span></a></li>
+                            </ul>                                       
+                        </div>                     
+                        <!-- Select language end -->   
+                    </li>   
+                </ul>
+            </div>
+            <!-- Live chat language div end -->
+
+            <!-- Quick link start -->
+            <nav class="quickLink">
+                <ul>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">AFFILIATE</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Terms and Conditions</a></li>
+                </ul>    
+            </nav>    
+            <!-- Quick link end -->
+
+            <!-- Register now div start -->
+            <div class="registerNow">
+                Dont have account yet? <br> <a href="">Register now</a>
+            </div>
+            <!-- Register now div end -->
+
+        </aside>
+        <!-- Toggle sidebar end -->
+
+        <!-- Header part start -->
+        <header class="header">
+            <div class="container d-flex justify-content-between">
+
+                <!-- Left logo & Menu button div start -->
+                <div class="logoDiv d-flex align-items-center">
+                    <button class="menuIcon">
+                        <span></span>
+                        <span class="line2"></span>
+                        <span class="line3"></span>                    
+                    </button>
+
+                    <div class="logo">
+                        <a href="">CryptoClub.Casino</a>
+                    </div>
+                </div>    
+                <!-- Left logo & Menu button div end -->
+
+                <!-- Search div start -->
+                <div class="searchDiv">
+                    <form action="">
+                        <input type="search" class="form-control" placeholder="Search" />
+                        <button class="serachBtn"></button>                        
+                    </form>
+                </div>
+                <!-- Search div end -->
+
+                <!-- Butotns div start -->
+                <div class="buttonsDiv">
+                    <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#loginModal">
+                        <span>log in</span>
+                    </button>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#registerModal">
+                        <span>sign up</span>
+                    </button>
+                </div>
+                <!-- Butotns div end -->
+
+            </div>
+        </header>
+        <!-- Header part end -->
+
+
+        <!-- Commn Middle section start -->
+        <section class="midSec">
+            <div class="container gameHistory">
+                <h2 class="d-flex align-items-center justify-content-center">
+                    <span>Gameplay History</span> 
+                    <button class="btn btn-secondary btn-small-square btn-refresh"><i></i></button>
+                </h2>
+                
+                <!-- Filter top part start -->
+                <div class="d-flex align-items-end justify-content-between filterTop">
+
+                    <!-- Filter left div start -->
+                    <div class="filterInputs d-flex floex-wrap align-items-center">
+                        <div class="form-group">
+                            <label>Start Date</label>
+                            <div class="inputWrapper">                            
+                                <input class="form-control datepicker" type="email" value="" />
+                            </div>    
+                        </div>
+
+                        <div class="form-group">
+                            <label>End date</label>
+                            <div class="inputWrapper">                            
+                                <input class="form-control datepicker" type="email" value="" />
+                            </div>    
+                        </div>
+
+                        <div class="form-group">
+                            <label>Gameplay ID</label>
+                            <div class="inputWrapper">                            
+                                <input class="form-control" type="email" value="" />
+                            </div>    
+                        </div>
+
+                        <div class="form-group">
+                            <label>Game name</label>
+                            <div class="inputWrapper">
+                                <select class="form-select">
+                                  <option selected></option>
+                                  <option value="1">One</option>
+                                  <option value="2">Two</option>
+                                  <option value="3">Three</option>
+                                </select>
+                            </div>    
+                        </div>
+
+                        <div class="form-group widthAuto">
+                            <div class="form-check">                          
+                              <label class="form-check-label" for="gameplay-jackpot">Gameplay with jackpot only</label>
+                              <input class="form-check-input" type="checkbox" value="" id="gameplay-jackpot">
+                            </div>
+                        </div>   
+                    </div>          
+                    <!-- Filter left div end -->               
+
+                    <!-- Filter buttons div start -->
+                    <div class="filterRight d-flex">
+                        <button type="reset" class="btn btn-secondary"><span>reset date</span></button>
+                        <button type="button" class="btn btn-primary"><span>search</span></button>                        
+                    </div>
+                    <!-- Filter buttons div end -->
+            
+                </div>
+                <!-- Filter top part end -->
+
+
+                <!-- Table div start -->
+                <div class="tableWrapper table-responsive">
+                    <table class="table tableInner table-striped">
+                        <thead>
+                            <tr>
+                                <th class="sort sorting_asc" align="center"><span>ID</span> <small></small></th>
+                                <th class="sort sorting_desc"><span>Game</span> <small></small></th>
+                                <th class="sort"><span>Mode</span> <small></small></th>
+                                <th class="noWrap">credit before gameplay <br> credit after gameplay</th>
+                                <th class="sort"><span>total bet</span> <small></small></th>
+                                <th class="sort"><span>total win</span> <small></small></th>
+                                <th class="sort"><span>profit</span> <small></small></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2545544</td>
+                                <td>Lorem Ipsum Game</td>
+                                <td>Real</td>
+                                <td>
+                                    <span class="creditSpan"><img src="images/pink-down-arrow.svg" alt=""> $10254.00 <br>$9254.00</span>
+                                </td>
+                                <td>$50.00</td>
+                                <td>$0.00</td>
+                                <td>-$50.00</td>
+                            </tr>
+                            <tr>
+                                <td>2545544</td>
+                                <td>Lorem Ipsum Game</td>
+                                <td>Real</td>
+                                <td>
+                                    <span class="creditSpan"><img src="images/yellow-up-arrow.svg" alt=""> $10254.00 <br>$9254.00</span>
+                                </td>
+                                <td>$50.00</td>
+                                <td>$0.00</td>
+                                <td>-$50.00</td>
+                            </tr> 
+                            <tr>
+                                <td>2545544</td>
+                                <td>Lorem Ipsum Game</td>
+                                <td>Real</td>
+                                <td>
+                                    <span class="creditSpan"><img src="images/pink-down-arrow.svg" alt=""> $10254.00 <br>$9254.00</span>
+                                </td>
+                                <td>$50.00</td>
+                                <td>$0.00</td>
+                                <td>-$50.00</td>
+                            </tr>
+                            <tr>
+                                <td>2545544</td>
+                                <td>Lorem Ipsum Game</td>
+                                <td>Real</td>
+                                <td>
+                                    <span class="creditSpan"><img src="images/yellow-up-arrow.svg" alt=""> $10254.00 <br>$9254.00</span>
+                                </td>
+                                <td>$50.00</td>
+                                <td>$0.00</td>
+                                <td>-$50.00</td>
+                            </tr>                                                        
+                        </tbody>
+                    </table>
+                </div>    
+                    
+
+
+            </div>  
+        </section>
+        <!-- Commn Middle section end -->
+
+
+        <!-- Footer part start -->
+        <footer class="foooter">
+
+            <!-- Click to scroll top start -->
+            <a title="Scroll Top" class="scrollTop clickScroll" href="body" rel="nofollow"></a>
+            <!-- Click to scroll top end -->
+
+            <div class="container">
+                
+                <!-- Footer Four column div start -->
+                <div class="fourColumn d-flex justify-content-md-between">
+                    <!-- content div start -->
+                    <div class="footerCon">
+                        <h2>CryptoClub.Casino</h2>                    
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <button class="btn btn-primary btn-square"><span>+18</span></button>
+                    </div>
+                    <!-- content div start -->
+
+                    <!-- Footer Page menu div start -->
+                    <div class="footerMenu">
+                        <h4>Page</h4>
+                        <ul>                        
+                            <li><a href="">Provably Fair</a></li>
+                            <li><a href="">Returning Player</a></li>
+                            <li><a href="">Daily Login Rewards</a></li>
+                            <li><a href="">Terms and Conditions</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <!-- Footer menu div end -->
+
+                    <!-- Footer menu div start -->
+                    <div class="footerMenu">
+                        <h4>Information</h4>
+                        <ul>                        
+                            <li><a href="">Provably Fair</a></li>
+                            <li><a href="">Returning Player</a></li>
+                            <li><a href="">Daily Login Rewards</a></li>
+                            <li><a href="">Terms and Conditions</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <!-- Footer menu div end -->
+
+                    <!-- Footer menu div start -->
+                    <div class="footerMenu">
+                        <h4>Other Links</h4>
+                        <ul>                        
+                            <li><a href="">Provably Fair</a></li>
+                            <li><a href="">Returning Player</a></li>
+                            <li><a href="">Daily Login Rewards</a></li>
+                            <li><a href="">Terms and Conditions</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <!-- Footer menu div end -->          
+                </div>             
+                <!-- Footer Four column div end -->         
+
+
+                <!-- Logo slider div start -->
+                <div class="logoSlider">
+
+                    <div id="logos" class="logosWrapper">
+                        <div class="logoImg"><span><img src="images/neosurf.svg" alt=""></span></div>
+                        <div class="logoImg"><span><img src="images/inte.svg" alt=""></span></div>
+                        <div class="logoImg"><span><img src="images/ecopayz.svg" alt=""></span></div>
+                        <div class="logoImg"><span><img src="images/visa.svg" alt=""></span></div>
+                        <div class="logoImg"><span><img src="images/netellere.svg" alt=""></span></div>
+                        <div class="logoImg"><span><img src="images/skrill.svg" alt=""></span></div>
+                        <div class="logoImg"><span><img src="images/mastercard.svg" alt=""></span></div>
+                        <div class="logoImg"><span><img src="images/secure.svg" alt=""></span></div>
+                        <div class="logoImg"><span><img src="images/mifinity.svg" alt=""></span></div>
+                        <div class="logoImg"><span><img src="images/paysafe-card.svg" alt=""></span></div>
+                        <div class="logoImg"><span><img src="images/discover.svg" alt=""></span></div>                        
+                    </div>
+                </div>
+                <!-- Logo slider div end -->
+
+                <!-- Licence text div start -->
+                <div class="licensTxt">
+                    <h4>Licensing and Regulations</h4>
+                    <p>Genesis Global Limited is incorporated under the laws of Malta (C65325) at registered address 28, GB Buildings, Level 3, Watar Street, Ta’ Xbiex, XBX 1301, Malta. Genesis Global Limited is licensed and regulated by the British Gambling Commission with account 45235. Gambling can be harmful; our Responsible Gaming page helps you to stay in control.</p>
+                    <p>UNDERAGE GAMBLING IS AN OFFENCE.</p>
+                </div>
+                <!-- Licence text div end -->
+
+                <!-- Gambling logos div start -->
+                <div class="gambLing d-lg-flex justify-content-lg-between">
+                    <img src="images/gambling-commission.svg" alt="" />
+                    <img src="images/gam-stop.svg" alt="" />
+                    <img src="images/begamble-aware.svg" alt="" />
+                    <img src="images/responsible-gaming-foundation-malta.svg" alt="" />
+                    <img src="images/mga.svg" alt="" />
+                    <img src="images/genesis.svg" alt="" />                    
+                </div>
+                <!-- Gambling logos div end -->
+
+                <!-- Copyright div start -->
+                <div class="copyRight">
+
+                    <span class="copyTxt">&copy; 2022 All Rights Reserved</span>
+
+                    <!-- Select language start -->
+                    <div class="selctLanguage">
+                        <button class="langWrapper selectedLang dropdown-toggle" type="button" id="languageBtn" data-bs-toggle="dropdown" aria-expanded="false">                            
+                            <i class="flag-usa"></i>
+                            <span>English</span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="languageBtn">
+                            <li><a href="" class="langWrapper"><i class="flag-usa"></i><span>English</span></a></li>
+                            <li><a href="" class="langWrapper"><i class="flag-deutch"></i><span>Deutch</span></a></li>
+                            <li><a href="" class="langWrapper"><i class="flag-espan"></i><span>Española</span></a></li>
+                        </ul>                                       
+                    </div>                     
+                    <!-- Select language end -->                       
+                </div>
+                <!-- Copyright div end -->
+
+
+            </div>
+        </footer>
+        <!-- Footer part end -->
+            
+    </div>
+
+
+    <!-- Login popup modal start -->
+    <div class="modal" tabindex="-1" id="loginModal">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>                    
+            <!-- Login box div start -->
+            <div class="loginBox d-flex">
+                <!-- Login left image div start -->
+                <div class="loginLeft">
+                    <img src="images/login.jpg" alt="">
+                </div>
+                <!-- Login left image div end -->
+
+                <!-- Login right form div start -->
+                <div class="loginRight">
+                    <h2 class="text-center">Log In</h2>
+                    <form action="">
+
+                        <div class="form-group">
+                            <label>Your Email</label>
+                            <div class="inputWrapper">
+                                <i class="inputIcon emailIcon"></i>
+                                <input class="form-control" type="email" value="" />
+                            </div>    
+                        </div>
+
+                        <div class="form-group">
+                            <label>Your Password</label>
+                            <div class="inputWrapper">
+                                <i class="inputIcon passIcon"></i>
+                                <input class="form-control" type="password" value="" />
+                            </div>    
+                        </div>    
+
+                        <div class="form-group pinGroup">
+                            <label>Your Pin</label>
+                            <div class="inputWrapper">                                    
+                                <input class="form-control" type="text" value="" />
+                                <input class="form-control" type="text" value="" />
+                                <input class="form-control" type="text" value="" />
+                                <input class="form-control" type="text" value="" />
+                                <input class="form-control" type="text" value="" />
+                            </div>    
+                        </div>                                                    
+
+                        <div class="btnsDiv">
+                            <button type="submit" class="btn btn-primary btn-block"><span class="doubleBorder">Login</span></button>
+                            <button type="button" class="btn btn-secondary btn-block" data-bs-toggle="modal" data-bs-target="#registerModal" data-bs-dismiss="modal"><span class="doubleBorder">register</span></button>
+                        </div>        
+
+                    </form>
+
+                    <div class="forgotLink text-center"><a href="">Forgot your Password?</a></div>
+
+                </div>
+                <!-- Login right form div end -->
+            </div>
+            <!-- Login box div end -->
+                
+        </div>
+      </div>
+    </div>
+    <!-- Login popup modal end -->    
+
+    <!-- Register modal start -->
+    <div class="modal" tabindex="-1" id="registerModal">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>                    
+            <!-- Login box div start -->
+            <div class="registerBox">
+                <h2 class="text-center">Register</h2>
+                <form action="">
+
+                    <div class="form-group">
+                        <label>Username<em>*</em></label>
+                        <div class="inputWrapper">
+                            <i class="inputIcon userIcon"></i>
+                            <input class="form-control" type="text" value="" name="" />
+                        </div>    
+                    </div>
+
+                    <div class="form-group">
+                        <label>Your Password<em>*</em></label>
+                        <div class="inputWrapper">
+                            <i class="inputIcon passIcon"></i>
+                            <input class="form-control" type="password" value="" name="" />
+                        </div>    
+                    </div>
+
+                    <div class="form-group">
+                        <label>Confirm Password<em>*</em></label>
+                        <div class="inputWrapper">
+                            <i class="inputIcon passIcon"></i>
+                            <input class="form-control" type="password" value="" name="" />
+                        </div>    
+                    </div>
+
+                    <div class="form-group displayDiv">
+                        <div class="form-check">                          
+                          <label class="form-check-label" for="display-password">Display my password in the confirmation email</label>
+                          <input class="form-check-input" type="checkbox" value="" id="display-password">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Your Email<em>*</em></label>
+                        <div class="inputWrapper">
+                            <i class="inputIcon emailIcon"></i>
+                            <input class="form-control" type="email" value="" name="" />
+                        </div>    
+                    </div>
+
+                    <div class="form-group d-flex align-items-center justify-content-between genderDiv paddTop20">
+                        <label class="pb-0">Gender:</label>
+                        <div class="gederWrap d-flex">
+                            <div class="form-check">
+                              <label class="form-check-label" for="male">male</label>
+                              <input class="form-check-input" type="checkbox" value="" id="male">
+                            </div>
+                            <div class="form-check">                          
+                              <label class="form-check-label" for="female">Female</label>
+                              <input class="form-check-input" type="checkbox" value="" id="female">
+                            </div>                            
+                        </div>    
+                    </div>
+
+                    <div class="form-group">
+                        <label>Firstname<em>*</em></label>
+                        <div class="inputWrapper">
+                            <i class="inputIcon userIcon"></i>
+                            <input class="form-control" type="text" value="" name="" />
+                        </div>    
+                    </div>
+
+                    <div class="form-group">
+                        <label>Lastname<em>*</em></label>
+                        <div class="inputWrapper">
+                            <i class="inputIcon userIcon"></i>
+                            <input class="form-control" type="text" value="" name="" />
+                        </div>    
+                    </div>
+
+                    <div class="form-group d-flex align-items-center justify-content-between dobDiv paddTop20">
+                        <label class="pb-0">Date of Birth<em>*</em></label>
+                        <div class="dobWrap text-center d-flex">
+                            <div class="width40"><input class="form-control" type="text" value="" name="" placeholder="DD" /></div>
+                            <div class="width40"><input class="form-control" type="text" value="" name="" placeholder="MM" /></div>
+                            <div class="width125"><input class="form-control" type="text" value="" name="" placeholder="YYYY" /></div>
+                        </div>    
+                    </div>                    
+
+                    <div class="form-group">
+                        <label>Street<em>*</em></label>
+                        <div class="inputWrapper">
+                            <i class="inputIcon streetIcon"></i>
+                            <input class="form-control" type="text" value="" name="" />
+                        </div>    
+                    </div>
+
+                    <div class="form-group">
+                        <label>City<em>*</em></label>
+                        <div class="inputWrapper">
+                            <i class="inputIcon cityIcon"></i>
+                            <input class="form-control" type="text" value="" name="" />
+                        </div>    
+                    </div>
+
+                    <div class="form-group">
+                        <label>Country<em>*</em></label>
+                        <div class="inputWrapper">                            
+                            <select class="form-select">
+                              <option selected>Please select country</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>                            
+                        </div>    
+                    </div>
+
+                    <div class="form-group">
+                        <label>State<em>*</em></label>
+                        <div class="inputWrapper">                            
+                            <select class="form-select">
+                              <option selected>Please Choose an option</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>                            
+                        </div>    
+                    </div>                    
+
+                    <div class="form-group">
+                        <label>Phone Number<em>*</em></label>
+                        <div class="inputWrapper">
+                            <i class="inputIcon phoneIcon"></i>
+                            <input class="form-control" type="tel" value="" name="" />
+                        </div>    
+                    </div>  
+
+                    <div class="form-group">
+                        <label>Choose secret question<em>*</em></label>
+                        <div class="inputWrapper">                            
+                            <select class="form-select">
+                              <option selected></option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>                            
+                        </div>    
+                    </div>                                        
+
+                    <div class="form-group">
+                        <label>Secret answer<em>*</em></label>
+                        <div class="inputWrapper">
+                            <i class="inputIcon questionIcon"></i>
+                            <input class="form-control" type="tel" value="" name="" />
+                        </div>    
+                    </div> 
+
+                    <div class="form-group d-flex align-items-center justify-content-between captcha-group">
+                        <label>Captcha code<em>*</em></label>
+                        <div class="d-flex align-items-center">
+                            <span>385</span>
+                            <input class="form-control" type="tel" value="" name="" />
+                            <input class="form-control" type="tel" value="" name="" />
+                            <input class="form-control" type="tel" value="" name="" />
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <div class="form-check long-check-text paddL18">
+                          <label class="form-check-label" for="agree">By pressing REGISTER I agree to the terms and conditions and privacy policy and confirm that I am of 18 years or over</label>
+                          <input class="form-check-input form-check-input-big" type="checkbox" value="" id="agree">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-check long-check-text paddL18">
+                          <label class="form-check-label" for="offers">I would like to be contacted with special offers, bonuses and promotions; <a href="">Read more</a></label>
+                          <input class="form-check-input form-check-input-big" type="checkbox" value="" id="offers">
+                        </div>
+                    </div>                                                                   
+
+                    <div class="btnsDiv">
+                        <button type="submit" class="btn btn-primary btn-block"><span class="doubleBorder trippleBorder">register <em></em></span></button>                        
+                    </div>        
+
+                </form>
+            </div>
+            <!-- Login box div end -->
+                
+        </div>
+      </div>
+    </div>
+    <!-- Register modal end -->    
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>    
+    <script src="js/bootstrap.bundle.min.js"></script> 
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>                
+    <script src="js/slick.min.js"></script>    
+    <script src="js/main.js"></script>
+
+
+
+
+  </body>
+</html>

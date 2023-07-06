@@ -1,0 +1,54 @@
+/*LOAD FONTS*/
+@font-face {
+    font-family: "Baloo2";
+    src: url("/theme/css/font/Baloo2-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Baloo2";
+    src: url("/theme/css/font/Baloo2-Regular.ttf") format("truetype");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Baloo2";
+    src: url("/theme/css/font/Baloo2-Medium.ttf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Baloo2";
+    src: url("/theme/css/font/Baloo2-Medium.ttf") format("truetype");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Baloo2";
+    src: url("/theme/css/font/Baloo2-Medium.ttf") format("truetype");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Baloo2";
+    src: url("/theme/css/font/Baloo2-SemiBold.ttf") format("truetype");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Baloo2";
+    src: url("/theme/css/font/Baloo2-Bold.ttf") format("truetype");
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "Baloo2";
+    src: url("/theme/css/font/Baloo2-Bold.ttf") format("truetype");
+    font-weight: 900;
+}
+
+.nav-tabs > li > a{
+    line-height:1.22857143 !important;
+}
+body, #myaccountDiv,p,h1,span,h2,h3,h4,h5,h6, #myaccountDiv a, .sweet-alert, .sweet-alert p, .colorbox, .casmodal-header,.modal-body,.btn{
+    font-family: "Baloo2", 'Helvetica', sans-serif !important;
+}

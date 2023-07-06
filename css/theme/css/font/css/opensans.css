@@ -1,0 +1,56 @@
+/*LOAD FONTS*/
+@font-face {
+  font-family: 'OpenSans';
+  font-style: normal;
+  font-weight: 100; 
+  src: url('/theme/css/font/OpenSans-Light.ttf') /* IE9 Compat Modes */ format('truetype');
+}
+@font-face {
+  font-family: 'OpenSans';
+  font-style: normal;
+  font-weight: 200; 
+  src: url('/theme/css/font/OpenSans-Light.ttf') /* IE9 Compat Modes */ format('truetype');
+}
+@font-face {
+  font-family: 'OpenSans';
+  font-style: normal;
+  font-weight: 300; 
+  src: url('/theme/css/font/OpenSans-Light.ttf') /* IE9 Compat Modes */ format('truetype');
+}
+@font-face {
+  font-family: 'OpenSans';
+  font-style: normal;
+  font-weight: 400; 
+  src: url('/theme/css/font/OpenSans-Regular.ttf') /* IE9 Compat Modes */ format('truetype');
+}
+@font-face {
+  font-family: 'OpenSans';
+  font-style: normal;
+  font-weight: 500; 
+  src: url('/theme/css/font/OpenSans-Regular.ttf') /* IE9 Compat Modes */ format('truetype');
+}
+@font-face {
+  font-family: 'OpenSans';
+  font-style: normal;
+  font-weight: 600; 
+  src: url('/theme/css/font/OpenSans-SemiBold.ttf') /* IE9 Compat Modes */ format('truetype');
+}
+@font-face {
+  font-family: 'OpenSans';
+  font-style: normal;
+  font-weight: 700; 
+  src: url('/theme/css/font/OpenSans-SemiBold.ttf') /* IE9 Compat Modes */ format('truetype');
+}
+@font-face {
+  font-family: 'OpenSans';
+  font-style: normal;
+  font-weight: 900; 
+  src: url('/theme/css/font/OpenSans-Bold.ttf') /* IE9 Compat Modes */ format('truetype');
+}
+
+.nav-tabs > li > a{
+    line-height:1.22857143 !important;
+}
+body, #myaccountDiv,p,h1,span,h2,h3,h4,h5,h6, #myaccountDiv a, .sweet-alert, .sweet-alert p, .colorbox, .casmodal-header,.modal-body,.btn{
+    font-family: 'OpenSans', 'Helvetica', sans-serif !important;
+}

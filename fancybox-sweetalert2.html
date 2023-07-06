@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title></title>
+
+	  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />    
+    <link href="css/jquery.fancybox.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/sweetalert2.min.css" rel="stylesheet" type="text/css" />     
+    <link href="css/style.css" rel="stylesheet" type="text/css" />        
+
+  </head>
+  <body>
+
+    <div class="wrapper">
+   
+    <div class="row">
+        <div class="col-4">
+            <a href="images/promotion-img-2.jpg" data-fancybox="gallery" data-caption="Caption Images 1">
+                <img src="images/promotion-img-2.jpg" alt="">
+            </a>    
+        </div>
+        <div class="col-4">
+            <a href="images/promotion-img.jpg" data-fancybox="gallery" data-caption="Caption Images 2">
+                <img src="images/promotion-img.jpg" alt="">
+            </a>    
+        </div>
+        <div class="col-4">
+            <a href="images/promotion-img-3.jpg" data-fancybox="gallery" data-caption="Caption Images 3">
+                <img src="images/promotion-img-3.jpg" alt="">
+            </a>    
+        </div>                
+    </div>
+
+    <br><br>
+      <button class="btn btn-primary" id="success">Success</button>
+      <button class="btn btn-secondary" id="error">Error</button>
+      <button class="btn btn-primary" id="warning">Warning</button>
+      <button class="btn btn-secondary" id="info">Info</button>
+      <button class="btn btn-primary" id="question">Question</button>
+      <button class="btn btn-primary" id="autoclose">Autoclose</button>
+
+    </div>
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>     
+    <script src="js/sweetalert2.js"></script>
+
+
+    <script>
+
+
+    $(function(){
+
+
+        $(document).on('click', '#success', function(e) {
+            Swal.fire({
+              title: '<strong>HTML <u>example</u></strong>',
+              icon: 'success',
+              text:'Text will apprea here',
+              showCloseButton: true,
+              showCancelButton: true,
+              focusConfirm: false,
+              confirmButtonText:
+                '<span>Great!</span>',              
+              cancelButtonText:
+                '<span>Cancel</span>',              
+              customClass: {
+                confirmButton: 'btn btn-primary',
+                cancelButton: 'btn btn-secondary'
+              },              
+            })
+        });
+
+        $(document).on('click', '#error', function(e) {
+            Swal.fire({
+              title: '<strong>HTML <u>example</u></strong>',
+              icon: 'error',
+              text:'Text will apprea here',
+              showCloseButton: true,
+              showCancelButton: true,
+              focusConfirm: false,
+              confirmButtonText:
+                '<span>Great!</span>',              
+              cancelButtonText:
+                '<span>Cancel</span>',              
+              customClass: {
+                confirmButton: 'btn btn-primary',
+                cancelButton: 'btn btn-secondary'
+              },              
+            })
+        });   
+
+        $(document).on('click', '#warning', function(e) {
+            Swal.fire({
+              title: '<strong>HTML <u>example</u></strong>',
+              icon: 'warning',
+              text:'Text will apprea here',
+              showCloseButton: true,
+              showCancelButton: true,
+              focusConfirm: false,
+              confirmButtonText:
+                '<span>Great!</span>',              
+              cancelButtonText:
+                '<span>Cancel</span>',              
+              customClass: {
+                confirmButton: 'btn btn-primary',
+                cancelButton: 'btn btn-secondary'
+              },              
+            })
+        });   
+
+        $(document).on('click', '#info', function(e) {
+            Swal.fire({
+              title: '<strong>HTML <u>example</u></strong>',
+              icon: 'info',
+              text:'Text will apprea here',
+              showCloseButton: true,
+              showCancelButton: true,
+              focusConfirm: false,
+              confirmButtonText:
+                '<span>Great!</span>',              
+              cancelButtonText:
+                '<span>Cancel</span>',              
+              customClass: {
+                confirmButton: 'btn btn-primary',
+                cancelButton: 'btn btn-secondary'
+              },              
+            })
+        });  
+
+        $(document).on('click', '#question', function(e) {
+            Swal.fire({
+              title: '<strong>HTML <u>example</u></strong>',
+              icon: 'question',
+              text:'Text will apprea here',
+              showCloseButton: true,
+              showCancelButton: true,
+              focusConfirm: false,
+              confirmButtonText:
+                '<span>Great!</span>',              
+              cancelButtonText:
+                '<span>Cancel</span>',              
+              customClass: {
+                confirmButton: 'btn btn-primary',
+                cancelButton: 'btn btn-secondary'
+              },              
+            })
+        });                                
+
+
+
+
+        $(document).on('click', '#autoclose', function(e) {
+            Swal.fire({              
+              icon: 'success',
+              title: 'Your work has been saved',
+              showConfirmButton: false,
+              timer: 1500
+            })
+
+        });  
+
+
+    });        
+
+         
+    </script>
+
+
+  </body>
+</html>

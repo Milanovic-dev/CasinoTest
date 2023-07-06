@@ -1,0 +1,108 @@
+/*LOAD FONTS*/
+@font-face {
+    font-family: "NeonNanoborg";
+    src: 
+        url('/theme/css/font/NeonNanoborgItalic.woff') format('woff'), 
+        url("/theme/css/font/NeonNanoborgItalic.otf") format("opentype");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "NeonNanoborg";
+    src: 
+        url('/theme/css/font/NeonNanoborg.woff') format('woff'),
+        url("/theme/css/font/NeonNanoborg.otf") format("opentype");
+}
+/*
+@font-face {
+    font-family: "NeonNanoborg";
+    src: 
+        url('/theme/css/font/neon.ttf') format('truetype');
+}*/
+body, #myaccountDiv,p,h1,span,h2,h3,h4,h5,h6, #myaccountDiv a, .sweet-alert, .sweet-alert p, .colorbox, .casmodal-header,.modal-body,.btn{
+    font-family: "NeonNanoborg", 'Helvetica', sans-serif !important;
+}
+body{
+    font-size:2.5em;
+}
+input,label,button,textarea,.btn,.modal-login label,.modal-login input,p,.sweet-alert p,.sweet-alert{
+    font-size:22px;
+}
+.btn{
+    line-height:1.02857143;
+}
+.blockGmInfo{
+    font-size:18px;
+}
+#myaccountDiv{
+    font-size:20px;
+    line-height:1.02;
+}
+.timerDiv_top{
+    width:65px;
+}
+.nav-tabs > li > a{
+    line-height:1.02857143 !important;
+    font-size:24px;
+    padding-top:15px;
+}
+#home i{
+    font-size:16px;
+}
+#goToTopLink{
+    padding-top:20px;
+}
+#filterOptions p{
+    font-size:32px;
+}
+
+ul.tourn-steps li span.stepinfo{
+    font-size:18px !important;
+}
+.rules-box p,.mytable-info td{
+    font-size:20px !important;
+}
+.buybutton{
+    font-size:24px !important;;
+    margin:0 0 0 5px !important;
+}
+.hourlydraw, .dailydraw, .sundaydraw{
+    font-size:24px !important;
+}
+.headerGameName{
+    line-height:1.02857143;
+}
+
+.evteams,.event_team1 ,.event_team2{
+    font-size:20px !important;
+}
+.sb a,.oddslist, .showGoals{
+    font-size:20px !important;
+}
+.bsleft, .bsright{
+    font-size:18px !important;
+}
+.sb-soccer-head .bsleft,.bet-slip-head{
+    font-size:24px !important;
+}
+#bet-slip{
+    font-size:20px !important;
+}
+#navbarBackground{
+    margin-top:15px !important;
+}
+.sbNavBar{
+    top:44px !important;
+}
+#keep, #accept_odds{
+    margin-top:10px !important;
+}
+.accept_odds_changes{
+    font-size:20px !important;
+}
+.fa-info-circle{
+    font-size:20px !important;
+}
+.sweet-alert input, .casmodal input{
+	font-size:20px !important;
+}
