@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="css/jquery.fancybox.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/sweetalert2.min.css" rel="stylesheet" type="text/css" />    
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
 
     <style>
@@ -46,12 +49,59 @@
       };
     </script>
   </head>
-  <body class="tw-bg-black tw-bg-opacity-30">
+  <body class="tw-bg-black" style="overflow-y: scroll; height: 200vh; background-image: url(images/bg-image.svg); background-repeat: no-repeat; background-position: top; background-size: cover;">
+    <header class="header" style="position: relative">
+      <div class="container d-flex justify-content-between">
+        <!-- Left logo & Menu button div start -->
+        <div class="logoDiv d-flex align-items-center">
+          <button class="menuIcon">
+            <span></span>
+            <span class="line2"></span>
+            <span class="line3"></span>
+          </button>
+
+          <div class="logo">
+            <a href="">CryptoClub.Casino</a>
+          </div>
+        </div>
+        <!-- Left logo & Menu button div end -->
+
+        <!-- Search div start -->
+        <div class="searchDiv">
+          <form action="">
+            <input type="search" class="form-control" placeholder="Search" />
+            <button class="serachBtn"></button>
+          </form>
+        </div>
+        <!-- Search div end -->
+
+        <!-- Butotns div start -->
+        <div class="buttonsDiv">
+          <button
+            class="btn btn-secondary"
+            data-bs-toggle="modal"
+            data-bs-target="#loginModal"
+          >
+            <span>log in</span>
+          </button>
+          <button
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#registerModal"
+          >
+            <span style="height: 100%;">sign up</span>
+          </button>
+        </div>
+        <!-- Butotns div end -->
+      </div>
+    </header>
+
+
     <div
-      class="tw-fixed tw-inset-0 w-backdrop-blur-sm tw-flex tw-justify-center tw-items-center"
+      class="tw-absolute tw-inset-0 w-backdrop-blur-sm tw-flex tw-justify-center tw-items-center tw-mt-[300px]"
     >
       <div
-        class="tw-bg-purple tw-h-[900px] sm:tw-w-[750px] tw-w-[500px] tw-mx-auto tw-rounded-[10px]"
+        class="tw-bg-purple tw-h-[1080px] sm:tw-w-[950px] tw-w-[500px] tw-mx-auto tw-rounded-[10px] tw-mt-[300px] tw-mb-[100px]"
       >
         <div
           class="tw-flex tw-flex-col tw-gap-[10px] tw-justify-center tw-items-center tw-text-center"
@@ -81,7 +131,7 @@
           </div>
         </div>
 
-        <div class="tw-flex tw-w-[86%] tw-mx-auto tw-gap-[20px] ">
+        <div class="tw-flex tw-w-[784px] tw-mx-auto tw-gap-[20px] ">
           <div
             class="tw-flex tw-mt-[10px] tw-text-xl tw-items-center tw-bg-darkPurple tw-p-[10px] tw-rounded-lg tw-justify-between tw-h-[20px] tw-w-[500px] "
           >
@@ -119,15 +169,15 @@
         </div>
 
         <div
-          class="tw-bg-lightPurple tw-w-[400px] sm:tw-w-[650px] tw-rounded-[10px] tw-mx-[50px] tw-mt-[20px] tw-h-[600px]"
+          class="tw-bg-lightPurple tw-w-[400px] sm:tw-w-[784px] tw-rounded-[10px] tw-mx-auto tw-mt-[20px] tw-h-[740px]"
         >
           <div class="tw-flex tw-pt-[40px] tw-pl-[40px] tw-pr-[40px] tw-pb-[20px]">
 
             <div class="tw-w-full tw-flex tw-gap-[20px] tw-h-max">
               <div class="tw-w-1/2">
-                <div class="tw-flex tw-flex-col tw-gap-[15px] tw-w-full">
+                <div class="tw-flex tw-flex-col tw-gap-[25px] tw-w-full">
                   <div
-                    class="tw-flex tw-text-subtitleGray  tw-text-[10px] sm:tw-text-[15px] tw-justify-between tw-rounded-lg tw-bg-lightPink tw-p-[7px]"
+                    class="tw-flex tw-text-subtitleGray tw-text-[10px] sm:tw-text-[15px] tw-justify-between tw-rounded-lg tw-bg-lightPink tw-p-[7px]"
                   >
                     <div class="tw-ml-[5px]">Before gameplay</div>
                     <div class="tw-text-lightGreen tw-mr-[5px] tw-text-[17px] tw-font-light">$100.145</div>
@@ -142,7 +192,7 @@
                 </div>
                 <div
                   style="background: linear-gradient(143deg, rgba(29, 255, 133, 0.28) 0%, rgba(4, 31, 16, 0.24) 88.31%);"
-                  class="tw-flex tw-mt-[20px] tw-relative tw-h-[155px] tw-rounded-lg tw-w-full tw-bg-darkGreen"
+                  class="tw-flex tw-mt-[20px] tw-relative tw-h-[204px] tw-rounded-lg tw-w-full tw-bg-darkGreen tw-transition tw-ease-in-out tw-duration-500 tw-transform hover:tw-scale-105"
                 >
                   <div
                     style="
@@ -154,16 +204,16 @@
                     "
          
                   >
-                  <div class="tw-absolute sm:tw-left-[20px] tw-left-[12px] tw-text-white tw-text-3xl tw-font-bold tw-top-[70px]">INITIAL</div>
+                  <div class="tw-absolute sm:tw-left-[20px] tw-left-[12px] tw-text-white tw-text-3xl tw-font-bold tw-top-[100px]">INITIAL</div>
 
-                  <img src="images/ace.png" class="tw-z-100 tw-absolute tw-bottom-[1px] ">
+                  <img src="images/ace.png" class="tw-z-100 tw-absolute tw-bottom-[1px] tw-right-0">
                 </div>
                 </div>
                 </div>
                 <div class="tw-w-1/2">
                   <div class="tw-flex tw-gap-[10px] ">
                     <div
-                      class="tw-bg-lightPink tw-flex tw-items-center tw-text-center tw-flex-col tw-w-full tw-h-[100px] sm:tw-h-[88px] tw-rounded-lg"
+                      class="tw-bg-lightPink tw-flex tw-items-center tw-text-center tw-flex-col tw-w-full tw-h-[100px] tw-rounded-lg"
                     >
                       <div
                         class="tw-text-[10px] sm:tw-text-[15px] tw-text-subtitleGray tw-mt-[10px] tw-mb-[10px]"
@@ -175,7 +225,7 @@
                       </div>
                     </div>
                     <div
-                      class="tw-flex tw-items-center tw-text-center tw-flex-col tw-bg-lightPink tw-w-full tw-h-[100px] sm:tw-h-[88px] tw-rounded-lg"
+                      class="tw-flex tw-items-center tw-text-center tw-flex-col tw-bg-lightPink tw-w-full tw-h-[100px] tw-rounded-lg"
                     >
                       <div
                         class="tw-text-[10px] sm:tw-text-[15px] tw-text-subtitleGray tw-mt-[10px] tw-mb-[10px]"
@@ -190,7 +240,7 @@
                   </div>
                   <div
                   style="background: linear-gradient(143deg, rgba(197, 29, 241, 0.40) 0%, rgba(45, 6, 55, 0.40) 100%);"
-                  class="tw-flex tw-mt-[20px] tw-relative tw-h-[155px] tw-rounded-lg tw-w-full tw-bg-gradient-to-r tw-from-[#6f2895] tw-to-[#39385e]"
+                  class="tw-flex tw-mt-[20px] tw-relative tw-h-[204px] tw-rounded-lg tw-w-full tw-bg-gradient-to-r tw-from-[#6f2895] tw-to-[#39385e] tw-transition tw-ease-in-out tw-duration-500 tw-transform hover:tw-scale-105"
                 >
                   <div
                     style="
@@ -202,10 +252,10 @@
                     "
                   >
 
-                  <div class="tw-absolute sm:tw-left-[20px] tw-left-[12px] tw-text-white tw-text-3xl tw-font-bold tw-top-[70px]">INITIAL</div>
+                  <div class="tw-absolute sm:tw-left-[20px] tw-left-[12px] tw-text-white tw-text-3xl tw-font-bold tw-top-[100px]">INITIAL</div>
 
 
-                  <img src="images/ace.png" class="tw-absolute tw-bottom-[1px] ">
+                  <img src="images/ace.png" class="tw-absolute tw-bottom-[1px] tw-right-0 ">
                 </div>
                 </div>
 
@@ -214,14 +264,14 @@
                 
               </div>
             </div>
-            <div class="tw-p-[10px] tw-mb-[5px] tw-w-[300px] sm:tw-w-[550px] tw-bg-[#26173F] tw-rounded-lg tw-flex tw-mx-[40px] tw-text-center tw-items-center tw-justify-center ">
+            <div class="tw-p-[10px] tw-mb-[5px] tw-w-[300px] sm:tw-w-[685px] tw-bg-[#26173F] tw-rounded-lg tw-flex tw-mx-[40px] tw-text-center tw-items-center tw-justify-center ">
               <span class="tw-text-lightGreen tw-text-[15px] tw-font-bold tw-mr-[3px]">TIE -</span> <span class=" tw-ml-[3px] tw-text-white tw-text-[15px] tw-font-bold">PLAYER WENT TO WAR</span>
             </div>
 
 
-            <div class="tw-flex tw-w-[320px] sm:tw-w-[560px] tw-mt-[10px] tw-mx-[42px]">
+            <div class="tw-flex tw-w-[620px] sm:tw-w-[685px] tw-mt-[20px] tw-mx-[42px]">
               <div class="tw-w-full tw-h-max tw-flex tw-gap-[20px]">
-                <div class="tw-w-1/2">
+                <div class="tw-w-1/2 tw-h-[60px]">
                 
                   <div style="background: linear-gradient(143deg, rgba(29, 255, 133, 0.28) 0%, rgba(4, 31, 16, 0.24) 88.31%);" class="tw-flex tw-relative tw-h-[60px] tw-bg-darkGreen tw-rounded-lg">
                     <div style="
@@ -259,12 +309,12 @@
             </div>
 
             <div>
-              <div class="tw-p-[10px] tw-mt-[10px] tw-mb-[5px] sm:tw-w-[550px] tw-w-[300px]  tw-flex tw-mx-[40px] tw-text-center tw-items-center tw-justify-center ">
-                <div class="tw-text-white tw-text-2xl tw-font-bold">
+              <div class="tw-p-[10px] tw-mt-[10px] tw-mb-[5px] sm:tw-w-[550px] tw-w-[300px] tw-mx-auto tw-flex tw-mt-[20px] tw-text-center tw-items-center tw-justify-center ">
+                <div class="tw-text-white tw-text-2xl tw-font-bold tw-mx-auto">
                   Burned Cards
                 </div>
               </div>
-              <div class="tw-w-[300px] sm:tw-w-[570px] tw-relative tw-h-[80px] tw-p-[10px] tw-mx-[30px]">
+              <div class="tw-w-[300px] sm:tw-w-[700px] tw-relative tw-h-[120px] tw-p-[10px] tw-mx-[30px] tw-mt-[10px]">
                 <div style="
                 background-image: url(images/burnedcardsbg.png);
                 height: 100%;
@@ -273,7 +323,7 @@
                 background-size: cover;
               ">
                   
-                <img src="images/groupace.png" class="sm:tw-h-[110px] tw-h-[100px] tw-absolute sm:tw-bottom-[10px] sm:tw-left-[110px] tw-bottom-[10px] tw-right-[10px] ">
+                <img src="images/groupace.png" class="sm:tw-h-[160px] tw-h-[100px] tw-absolute sm:tw-bottom-[10px] sm:tw-left-[90px] tw-bottom-[10px] tw-right-[10px] ">
                 </div>
 
               </div>
